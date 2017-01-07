@@ -2,18 +2,23 @@ header{
     background: #009999;
     color: #000000;
     text-align: center;
+    font-family: 'Sue Ellen Francisco';
+    font-size: 25px;
 }
 
 footer{
     background: #009999;
     color: #000000;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco';
+    font-size: 25px;
 }
 
 article{
     text-align: justify; 
 }
 
-#box1{
+.box1{
     background: #009999;
     color: #000000;
     text-align: center;
@@ -21,8 +26,10 @@ article{
     align-items: center;
 }
 
-#box2{
-    background: #009999;
-    color: #ffffff;
+.box2{
+    background: #CCD6DD;
+    color: #000000;
+    text-align: center;
+    font-family: 'Arima Madurai';
 }
 
