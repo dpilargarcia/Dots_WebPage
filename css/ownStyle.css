@@ -1,0 +1,28 @@
+header{
+    background: #009999;
+    color: #000000;
+    text-align: center;
+}
+
+footer{
+    background: #009999;
+    color: #000000;
+}
+
+article{
+    text-align: justify; 
+}
+
+#box1{
+    background: #009999;
+    color: #000000;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+#box2{
+    background: #009999;
+    color: #ffffff;
+}
+
