@@ -1,21 +1,138 @@
 header{
-    background: #009999;
-    color: #000000;
-    text-align: center;
-    font-family: 'Sue Ellen Francisco';
-    font-size: 25px;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/header.png);
+    width: 100%;
+    height: auto;
+     background-repeat: no-repeat;
+   background-size: cover;
+    margin-bottom: 20px;
+    /*
+    background: url(../images/header.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: green;
+    border: none !important;
+    height: 300px;
+    */
 }
 
-footer{
-    background: #009999;
-    color: #000000;
-    text-align: center;
-    font-family: 'Sue Ellen Francisco';
-    font-size: 25px;
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
+
+header .logo{
+    line-height: 200px;
+    text-align: center;
+}
+
+header nav{
+    text-align: center;
+    line-height: 60px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 16px;
+    font-family: 'Arima Madurai';
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+header nav a:focus{
+    border-bottom-style: dotted; 
+    border-bottom-width: 2px; 
+    text-decoration: none;
+    border-bottom-color: #fff;
+    color: #fff;
+}
+
+.header2{
+    position: fixed;
+    height: 110px;
+    z-index: 1;
+}
+
+.header2 .logo{
+    line-height: 50px;
+}
+
+.header2 nav{
+    line-height: 50px;
+}
+
+@media screen and (max-width: 950px){
+    header .logo,
+    header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    .header2{
+        height: auto;
+    }
+    .header2 .logo,
+    header2 nav{
+        line-height: 50px;
+    }
+}
+
+
+
+.imglogo{
+    width: 50px;
+    height: 50px;
+}
+
+.contenido2{
+    padding-top: 100%;
+}
+
+.container{
+    z-index: 2;
+}
+
+.carousel-indicators{
+    z-index: 0;
+}
+.carousel-inner{
+    z-index: -1;
+}
+
+
+
+
+
+/*******************************************/
 
 article{
     text-align: justify; 
+}
+
+.footer{
+    background: #009999;
+    color: #000000;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco';
+    font-size: 25px;
+    display: inline-block;
+    width: 100%;
+ 
 }
 
 .box1{
@@ -33,3 +150,33 @@ article{
     font-family: 'Arima Madurai';
 }
 
+.sin-borde{
+    border-radius: 0%;
+}
+
+.centrado{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+/****************************************/
+/*Estilo Formulario2*/
+/****************************************/
+.formulario2 {
+    color: #666666;
+    font-family:Arial;
+}
+.input2, .textarea2 {
+    background:#666666;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    font-size:10px;
+    color:#ffffff;
+}
+#submit {
+    border:none;
+    cursor:pointer;
+}
+/****************************************/

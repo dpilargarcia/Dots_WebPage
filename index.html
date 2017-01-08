@@ -7,21 +7,89 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/ownStyle.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefine+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco">
+        <link rel="shortcut icon" href="images/favicons/home/favicon.ico">
+        
+        <!--Librerías de JQuery-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headerjs.js"></script>
         
         <title>Personal Page</title>
     </head>
     
     <body>
         
+        <!--***********************************************************************************************************************-->
+        <!--Encabezado-->
+        <!--***********************************************************************************************************************-->
         <header>
-            <div class="container">
-                <div class="col-md-3"><img src="images/logo2.png" class="img-circle" width="100" height="100"></div>
-                <div class="col-md-9">Navbar</div>
+            
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html"><img class="imglogo" src="images/logo2.png"></a>
+                </div>
+                <nav>
+                    <a class="selected1" href="#">Nosotros</a>
+                    <a class="selected2" href="#">Servicios</a>
+                    <a class="selected3" href="#">Contáctanos</a>
+                    <a href="html/tablas.html">Tablas</a>
+                    
+                    
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulario<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="formulario.html">Formulario 1</a></li>
+                        <li><a href="formulario2.html">Formulario 2</a></li>
+                        <li><a href="formulario3.html">Formulario 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <a href="html/header.html">Header Dinámico</a>
+                </nav>
             </div>
+            
+            
+            
+            <!--
+            <nav class="sin-borde navbar-fixed-top menu">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="col-md-3"><a href="index.html"><img src="images/logo2.png" class="img-circle" width="50" height="50"></a></div>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="letra"><a class="black" href="#">Nosotros</a></li>
+                        <li><a class="black" href="#">Servicios</a></li>
+                        <li><a class="black" href="#">Contáctanos</a></li>
+                        <li><a class="black" href="html/tablas.html">Tablas</a></li>
+                        <li class="dropdown">
+                            <a class="black" class="dropdown-toggle" data-toggle="dropdown" href="#">Formulario<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="black" href="html/formulario.html">Formulario 1</a></li>
+                                <li><a class="black" href="html/formulario2.html">Formulario 2</a></li>
+                                <li><a class="black" href="html/formulario3.html">Formulario 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                    </form>
+                </div>
+            </nav> 
+            -->
         </header>
+        <!--***********************************************************************************************************************-->
         
         
-        <div class="container">
+                
+        
+        <!--***********************************************************************************************************************-->
+        <!--Cuerpo-->
+        <!--***********************************************************************************************************************-->
+        <div class="container contenido">
             
             <!--
             *col-xs: Extra Small, para dispositivos móviles, ej: celulares
@@ -37,32 +105,115 @@
             </div>
 
             <div class="row">
-                <article class="col-xs-12">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</article>
-                <aside class="col-xs-12">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</aside>
+                
+                <div class="col-xs-12">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</div>
+                
+                <hr>
+                <!--Slide-->
+                <div class="col-xs-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/slide/web1.png" alt="Chania">
+                                <div class="carousel-caption">
+                                    <h3>Chania</h3>
+                                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/slide/web2.png" alt="Chania">
+                                <div class="carousel-caption">
+                                    <h3>Chania</h3>
+                                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/slide/web3.png" alt="Flower">
+                                <div class="carousel-caption">
+                                    <h3>Flowers</h3>
+                                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="images/slide/web4.png" alt="Flower">
+                                <div class="carousel-caption">
+                                    <h3>Flowers</h3>
+                                    <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <br>
+            
 
             <div class="row">
                 <div class="col-md-12">
-                    <button class="btn btn-warning">Iniciar</button>
+                    <button class="btn btn-warning pull-right">Iniciar</button>
                 </div>
             </div>
+            <br>
 
             <div class="row">
                 <div class="box2 col-xs-12 col-sm-6 col-md-4">
-                    <img src="images/logo1.png" class="img-circle">
+                    <img src="images/logo1.png" class="img-circle img-responsive center-block">
                     <p>¿Quiénes somos?</p>
                 </div>
                 
                 <div class="box2 col-xs-12 col-sm-6 col-md-4">
-                    <img src="images/logo2.png" class="img-circle">
+                    <img src="images/logo2.png" class="img-circle img-responsive center-block">
                     <p>Nuestros clientes</p>
                 </div>
                 
                 <div class="box2 col-xs-12 col-sm-12 col-md-4">
-                    <img src="images/logo1.png" class="img-circle">
+                    <img src="images/logo1.png" class="img-circle img-responsive center-block">
                     <p>Nuestro trabajo</p>
                 </div>
             </div>
+            <br>
+            
+            <div class="row">
+                <blockquote class="blockquote-reverse">
+                    <em>"Sólo podemos ver un poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho por hacer".</em>
+                    <footer>Alan Turing,<cite title="Fuente"> disponible en...</cite></footer>
+                </blockquote>
+            </div>    
+            
+            
+            <!--Línea de código-->
+            <div class="row"><p><code>Éste en un texto prueba en formato código</code></p></div>
+            
+            <!--Bloque de código-->
+            <div class="row"><pre><p>Éste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código prueba</p></pre></div>
+            
+            <!--Teclas-->
+            <div class="row">
+                <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br></p>
+                <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+            </div>
+            
             
             <!--Limpiando los errores del responsive:-->
             <div class="clearfix visible-sm-block"></div>
@@ -70,8 +221,16 @@
             <div class="row">
             </div>
         </div>
+        <br>
+        <!--***********************************************************************************************************************-->
         
-        <footer>
+        
+        
+        
+        <!--***********************************************************************************************************************-->
+        <!--Pie de Página-->
+        <!--***********************************************************************************************************************-->
+        <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
@@ -86,11 +245,13 @@
                 </div>
             </div>
         </footer>
+        <br>
+        <!--***********************************************************************************************************************-->
         
         
-        <!--Librerías de JQuery-->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        
+        
+        
     </body>
 
 </html>
