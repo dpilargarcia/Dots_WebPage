@@ -6,13 +6,15 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/ownStyle.css">
+        <link rel="stylesheet" href="css/dropdownStyle.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefine+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco">
         <link rel="shortcut icon" href="images/favicons/home/favicon.ico">
         
         <!--Librerías de JQuery-->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/headerjs.js"></script>
+        <script src="js/headerdinamicojs.js"></script>
+        <script src="js/dropdownjs.js"></script>
         
         <title>Personal Page</title>
     </head>
@@ -22,31 +24,30 @@
         <!--***********************************************************************************************************************-->
         <!--Encabezado-->
         <!--***********************************************************************************************************************-->
-        <header>
+        <header class="header">
             
             <div class="wrapper">
+                
+                <nav id="menu_gral">
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="html/header.html">Header Dinámico</a></li>
+                        <li><a href="html/tablas.html">Tablas</a></li>
+                        <li><a href="#">Formularios</a>
+                            <ul id="adelante">
+                                <li><a href="html/formulario.html">Formulario 1</a></li>
+                                <li><a href="html/formulario2.html">Formulario 2</a></li>
+                                <li><a href="html/formulario3.html">Formulario 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
                 <div class="logo">
                     <a href="index.html"><img class="imglogo" src="images/logo2.png"></a>
                 </div>
-                <nav>
-                    <a class="selected1" href="#">Nosotros</a>
-                    <a class="selected2" href="#">Servicios</a>
-                    <a class="selected3" href="#">Contáctanos</a>
-                    <a href="html/tablas.html">Tablas</a>
-                    
-                    
-                    <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Formulario<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        <li><a href="formulario.html">Formulario 1</a></li>
-                        <li><a href="formulario2.html">Formulario 2</a></li>
-                        <li><a href="formulario3.html">Formulario 3</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <a href="html/header.html">Header Dinámico</a>
-                </nav>
             </div>
             
             
@@ -105,6 +106,19 @@
             </div>
 
             <div class="row">
+                
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+                    </ul>
+                </div>
+                
                 
                 <div class="col-xs-12">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</div>
                 

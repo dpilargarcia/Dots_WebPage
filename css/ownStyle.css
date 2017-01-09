@@ -1,81 +1,40 @@
-header{
-    width: 100%;
-    overflow: hidden;
-    background: url(../images/header.png);
-    width: 100%;
-    height: auto;
-     background-repeat: no-repeat;
-   background-size: cover;
-    margin-bottom: 20px;
-    /*
-    background: url(../images/header.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: green;
-    border: none !important;
-    height: 300px;
-    */
+* {
+    margin: 0;
+    padding: 0;
+    border: o none;
+    position: relative;
 }
 
+.header{
+    width: 100%;
+    background: url(../images/header.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    z-index: 1;
+}
 .wrapper{
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-
 header .logo{
-    line-height: 200px;
+    line-height: 400px;
     text-align: center;
 }
 
-header nav{
-    text-align: center;
-    line-height: 60px;
-}
-
-header nav a{
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    line-height: normal;
-    font-size: 16px;
-    font-family: 'Arima Madurai';
-    -webkit-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease;
-}
-
-header nav a:hover{
-    background: #ffffff;
-    text-decoration: none;
-    opacity: 0.8;
-}
-header nav a:focus{
-    border-bottom-style: dotted; 
-    border-bottom-width: 2px; 
-    text-decoration: none;
-    border-bottom-color: #fff;
-    color: #fff;
-}
 
 .header2{
     position: fixed;
-    height: 110px;
+    height: 200px;
     z-index: 1;
 }
-
 .header2 .logo{
-    line-height: 50px;
+    line-height: 190px;
 }
-
-.header2 nav{
-    line-height: 50px;
-}
-
+/*
 @media screen and (max-width: 950px){
     header .logo,
     header nav{
@@ -88,23 +47,24 @@ header nav a:focus{
     }
     .header2 .logo,
     header2 nav{
-        line-height: 50px;
+        line-height: 10px;
     }
 }
+*/
 
 
-
+/*******************************************/
 .imglogo{
     width: 50px;
     height: 50px;
 }
 
 .contenido2{
-    padding-top: 100%;
+    padding-top: 30%;
 }
 
 .container{
-    z-index: 2;
+    z-index: 0;
 }
 
 .carousel-indicators{
@@ -116,10 +76,17 @@ header nav a:focus{
 
 
 
+.seis{
+    position: relative;
+    z-index: 10;
+}
+/*******************************************/
+
 
 
 /*******************************************/
-
+/*Otros Estilos*/
+/*******************************************/
 article{
     text-align: justify; 
 }
@@ -160,10 +127,12 @@ article{
     align-items: center;
     align-items: center;
 }
+/*******************************************/
 
-/****************************************/
+
+/*******************************************/
 /*Estilo Formulario2*/
-/****************************************/
+/*******************************************/
 .formulario2 {
     color: #666666;
     font-family:Arial;
@@ -179,4 +148,67 @@ article{
     border:none;
     cursor:pointer;
 }
-/****************************************/
+/*******************************************/
+
+
+
+/*******************************************/
+/*Navbar*/
+/*******************************************/
+#menu_gral {
+    font-family: 'Arima Madurai';
+    width: 100%;
+    margin: 0rem auto;
+}
+#menu_gral ul {
+    list-style-type: none; 
+    text-align: center;
+    font-size: 0;
+}
+#menu_gral > ul li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+#menu_gral li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    color: #fff;
+}
+#menu_gral li:hover a, #menu_gral li a:focus {
+    background: #fff;
+    color: #000;
+}
+#menu_gral li ul {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+}
+#menu_gral li:hover ul, #menu_gral li:focus ul {
+    width: 100%;
+    background:  #fff;
+    z-index: 5;
+    opacity: 0.7;
+}
+#menu_gral li li {
+    display: block;
+    width: 100%;
+}
+#menu_gral li:hover li a, #menu_gral li:focus li a {
+    font-family: 'Arima Madurai';
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    background: #002233;
+    color: aqua;
+}
+#menu_gral li li a:hover, #menu_gral li li a:focus {
+    background: #fff;
+    color: #000;
+}
+
+#menu_gral li ul #adelante{
+    z-index: 10;
+}
+/*******************************************/
