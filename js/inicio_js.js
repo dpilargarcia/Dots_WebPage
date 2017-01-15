@@ -1,8 +1,7 @@
 $(document).ready(function(){
-
-	$("#banner").css({"height":$(window).height() + "px"});//alto del banner para que éste se vea. El alto es igual al alto del navegador
+    $("#banner").css({"height":$(window).height() + "px"}); //Alto del banner igual al tamaño del navegador
     
-	var flag = false;
+    var flag = false;
 	var scroll;
 
 	$(window).scroll(function(){
@@ -12,7 +11,7 @@ $(document).ready(function(){
 			if(!flag){
 				$("#logo").css({"margin-top": "-5px", "width": "50px","height":"50px"});
 
-				$("header").css({"background-color": "#3C3C3C"});
+				$("header").css({"background-color": "#000000", "opacity": "0.8"});
 				flag = true;
 			}
 		}else{
@@ -23,8 +22,5 @@ $(document).ready(function(){
 				flag = false;
 			}
 		}
-
-
-	});
-
+    });
 });

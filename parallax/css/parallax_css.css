@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefine+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Just Another Hand';
+}
+
+section#contenedor{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url(../../images/backgrounds/3.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+
+section#cuerpo{
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+section#scroll_down{
+    margin: auto;
+    width: 200px;
+    height: 60px;
+}
+
+p#titulo{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+p#flecha{
+    -webkit-transform: rotate(270deg);
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+section#section{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    background-color: azure;
+}
