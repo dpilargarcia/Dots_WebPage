@@ -1,0 +1,141 @@
+img#logo
+    width: 20px
+    height: 20px
+    padding: 0
+a#log 
+    padding: 0px
+body
+    background-color: transparent
+.menu_bar
+    display: none
+
+header
+    width: 100%
+    z-index: 1000
+    .menu2
+        background-color: white
+        width: 100%
+        z-index: 1000
+        position: fixed
+        .logo
+            float: left
+            padding-left: 50px
+            padding-right: 50px
+            a
+                text-decoration: none
+                color: $gray
+                font-size: 40px
+                line-height: 50px
+                font-family: 'Montez'
+                font-weight: bold
+                &:hover
+                    color: #ff8533
+        nav
+            float: right
+            padding-left: 50px
+            padding-right: 50px
+            ul
+                list-style: none
+                display: table
+                margin: auto
+                li
+                    display: inline-block
+                    position: relative
+                    a
+                        color: $gray
+                        display: block
+                        text-decoration: none
+                        padding: 15px
+                        &:hover
+                            color: $gray
+                            text-decoration: none
+                            border-bottom: 2px solid #ff8533
+                            padding-bottom: 10px
+                        
+                    
+
+.container
+    position: relative
+    z-index: 0
+/*Submenús*/
+header nav ul li:hover .children
+    display: block
+    padding-bottom: 15px
+    padding-left: 20px
+    padding-right: 20px
+
+header nav ul li .children
+    display: none
+    position: absolute
+    background-color: white
+    width: 120%
+    z-index: 1000
+
+header nav ul li .children li
+    display: block
+    z-index: 1000
+
+header nav ul li a span
+    position: relative
+    margin-left: 10PX
+    margin-right: 0px
+    top: 3px
+
+
+
+/*Responsive*/
+@media screen and (max-width: 800px) 
+    body 
+        padding-top: 60px
+    .logo
+        display: none
+    .menu_bar 
+        display: block
+        width: 100%
+        position: fixed
+        top: 0
+        background: #fff
+        z-index: 1000
+        .bt-menu 
+            display: block
+            padding: 20px
+            color: #ff8533
+            overflow: hidden
+            font-size: 15px
+            font-weight: bold
+            text-decoration: none
+        span 
+            float: right
+            font-size: 20px
+    header nav 
+        width: 100% !important
+        height: calc(100% - 60px)/*Altura del 100% restándole 80px del menú fijo*/
+        position: fixed
+        right: 100%
+        margin: 0
+        overflow: scroll
+        z-index: 1000
+        ul
+            list-style: none
+            display: block 
+            background: white
+            width: 100%
+            li 
+                display: block !important
+                a 
+                    display: block 
+                    &:hover
+                        border: none !important
+                        color: #ff8533 !important
+    
+    /*SubMenú*/
+    header nav ul li:hover .children 
+        display: none
+    header nav ul li .children 
+        width: 100%
+        position: relative
+    header nav ul li .children li a 
+        margin-left: 20px
+    header nav ul li a span 
+        float: right
+	

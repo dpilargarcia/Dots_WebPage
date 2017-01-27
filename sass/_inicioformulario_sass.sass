@@ -1,0 +1,183 @@
+#contactanos
+    //background-image: url(../images/backgrounds/5.jpg)
+    margin-top: 30px
+    margin-bottom: 30px
+
+.contacto    
+    background-color: $gris
+    
+#datos
+    //background: rgba($maroon, .5)
+    //background-image: url(../images/backgrounds/3.jpg)
+    padding: 70px
+    p
+        padding: 0px
+
+
+.wrapper
+    width: 100%
+    max-width: 600px
+    padding: 40px
+    margin: auto
+    background-color: $white
+
+    
+.form
+    h1
+        padding: 10px
+    span
+        padding-right: 10px
+        
+    
+.contenedor-formulario
+    width: 100%
+    color: $blanco
+    padding: 0px
+    .formulario
+        width: 100%
+        margin: auto
+        .input-group
+            position: relative /*La posición relativa permite que a los elementos hijo se les pueda poner una posición absoluta para así controlar las propiedades de los hijos y su posicionamiento. En este caso, es ponerlos dentro del input*/
+            width: 80%
+            margin-bottom: 30px
+            margin-left: auto
+            margin-right: auto
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+                font-size: 14px
+                color: $gray
+                width: 100%
+                outline: none
+                padding: 15px
+                background: none
+                border: none
+                border-bottom: $borde solid $gray
+                &:focus,
+                &:active
+                    outline: none
+                    border-bottom: $borde solid $gray
+                &.error /*Esta clase error se maneja con javascript*/
+                    border-bottom: $borde solid $maroon
+                    + label
+                        color: rgba($maroon, .7)
+            textarea[type="textarea"]
+                font-size: 14px
+                color: $gray
+                width: 100%
+                height: 150px
+                outline: none
+                padding: 15px
+                margin-top: 20px
+                background: none
+                border: none
+                border-bottom: $borde solid $gray
+                &:focus,
+                &:active
+                    outline: none
+                    border: none
+                    border-bottom: 1px solid $gray
+                &.error /*Esta clase error se maneja con javascript*/
+                    border: none
+                    border-bottom: 1px solid $maroon
+                    + label
+                        color: rgba($maroon, .7)
+            label
+                color: rgba($gray, .5)
+                &.label
+                    /*Posicionando el label dentro del input con absolute*/
+                    position: absolute
+                    top: 25px
+                    left: 0
+                    font-size: 14px
+                    line-height: 16px
+                    -webkit-transition: all .3s ease 
+                    -o-transition: all .3s ease
+                    transition: all .3s ease
+                    &.active
+                        top: -5px
+                        font-size: 12px
+                        line-height: 12px
+                        color: rgba($gray, 0.5)
+            &.checkbox label,
+            &.radio label
+                display: inline-block
+                cursor: pointer
+                color: $gray
+                position: relative
+                padding: 5px 15px 5px 51px
+                font-size: 1em
+                border-radius: 3px
+                -webkit-transition: all .3s ease 
+                -o-transition: all .3s ease
+                transition: all .3s ease
+                &:hover
+                    color: $activo
+                    width: 100%
+                &:before /*Propiedades a agregar antes del label*/
+                    content: ""
+                    display: inline-block
+                    width: 17px
+                    height: 17px
+                    position: absolute /*Posicionando donde queramos con absolute*/
+                    left: 15px
+                    border-radius: 50%
+                    background:  none
+                    border: $borde solid $gray
+            &.error
+                label
+                    color: $maroon
+                    &:hover
+                        background: rgba($red, .2)
+                    &:before
+                        border: $borde solid $maroon
+            &.radio /*Estilo para cuando se selcciona los radio buttons*/
+                input[type="radio"]
+                    display: none
+                    &:checked + label:before
+                        display: none
+                    &:checked + label
+                        background: $petroleo
+                        color: $white
+                        padding: 5px 15px
+                        border-radius: $borde
+            &.checkbox /*Estilo para cuando se selcciona el checkbox. Similar es para los radio buttons*/
+                label:before
+                    border-radius: 3px
+                input[type="checkbox"]
+                    display: none
+                    &:checked + label:before
+                        display: none
+                    &:checked + label
+                        background: $gris
+                        opacity: 0.7
+                        color: $black
+                        padding: 5px 15px
+                        width: 100%
+                        border-radius: $borde
+                        text-align: center
+        input[type="submit"]
+            background: $white
+            color: $gray
+            cursor: pointer
+            padding: 10px
+            width: 100%
+            position: relative
+            margin-left: auto
+            margin-right: auto
+            border: $borde solid $activo
+            -webkit-transition: all .3s ease 
+            -o-transition: all .3s ease
+            transition: all .3s ease
+            &:hover
+                background: $activo
+                border: $borde solid $activo
+                color: $white
+
+
+                    
+                    
+                
+                
+                
+    

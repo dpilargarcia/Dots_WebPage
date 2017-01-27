@@ -4,70 +4,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefine+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco|Muli">
+        <link rel="shortcut icon" href="images/Logos/Faviconmin.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefine+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco">
-        <link rel="shortcut icon" href="images/favicons/home/favicon.ico">
-        <link rel="stylesheet" href="css/inicio_css.css">
-        <link rel="stylesheet" href="css/inicio_menuresponsive_css.css">
-        
-        <!--Librerías de JQuery y otros JS-->
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/inicio_js.js"></script>
-        <script src="js/inicio_menuresponsive_js.js"></script>
-        
-        <title>Personal Page: INICIO</title>
+        <!--Social Buttons:-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!--Efecto hover:-->
+        <link rel="stylesheet" href="css/ihover.css">
+        <!--Estilos personalizados:-->
+        <link rel="stylesheet" href="sass/main.css">
+        <title>En la Nube</title>
     </head>
     
     <body>
-        
-        <!--***********************************************************************************************************************-->
         <!--Encabezado-->
-        <!--***********************************************************************************************************************-->
         <header>
-            
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu" class="icon-menu"></label>
-            
-            <nav class="menu">
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>Menú</a>
+            </div>
+            <nav>
                 <ul>
+                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
+                    <img id="logo" src="images/Logos/Logo4.png">
+                    <li role="presentation" class="dropdown submenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#portafolio" role="button" aria-haspopup="true" aria-expanded="false">Portafolio<span class="caret"></span></a>
+                        <ul  id="drop" class="dropdown-menu">
+                            <li><a href="contenidos/contenidos.html">Contenidos</a></li>
+                            <li><a href="contenidos/header_scroll/index.html">Menú Scroll</a></li>
+                            <li><a href="contenidos/parallax/parallax.html">Parallax</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contactanos">Contáctanos</a></li>
-                    
-                    <img id="logo" src="images/Logo.png">
-
-                    <li role="presentation" class="dropdown submenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portafolio<span class="caret"></span></a>
-                        <ul  id="drop" class="dropdown-menu">
-                            <li><a href="header_responsive/headerResponsive.html">Menú Responsive</a></li>
-                            <li><a href="header_scroll/index.html">Menú Scroll</a></li>
-                            <li><a href="parallax/parallax.html">Parallax</a></li>
-                            <li><a href="html/slides.html">Slides</a></li>
-                            <li><a href="html/tablas.html">Tablas</a></li>
-                        </ul>
-                    </li>
-                    <li role="presentation" class="dropdown submenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Formularios<span class="caret"></span></a>
-                        <ul  id="drop" class="dropdown-menu">
-                            <li><a href="html/formulario.html">Formulario 1</a></li>
-                            <li><a href="html/formulario2.html">Formulario 2</a></li>
-                            <li><a href="html/formulario3.html">Formulario 3</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </nav>
         </header>
-        
         <section id="banner">
             <!--Banner de fondo-->
         </section>
-        <!--***********************************************************************************************************************-->
+        <!--------------------------------------------------------------------------------------------------------------------------->
         
         
-                
-        
-        <!--***********************************************************************************************************************-->
         <!--Cuerpo-->
-        <!--***********************************************************************************************************************-->
         <div id="contenido" class="container">
             
             <!--
@@ -77,148 +54,370 @@
             *col-lg: Large, para monitores de computadores
             -->
  
-            <div id="contenido" class="main row">
-                <div class="col-md-12">
-                    <section id="nosotros"><a name="nosotros">Nosotros</a></section>
-                    <section id="servicios"><a name="servicios">Servicios</a></section>
-                    <section id="contactanos"><a name="contactanos">Contacto</a></section>
-                    <section id="portafolio"><a name="portafolio">Portafolio</a></section>
+            <!--Inicio-->
+            <div id="inicio">
+            <div class=""><hr id="ancla"><hr id="ancla"></div>    
+            <div class="row padding centro">
+                <h1 class="">En La Nube: ¡Del sueño a la realidad!</h1>  
+                <h4 class="titulo2">Dale vida a esa idea que tienes para tu página web</h4>
+                <hr>
+                <p class="centro">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
+                <hr>
+            </div>    
+            <div class="row">
+                <div id="contenido" class="main row">
+                    <div class="col-xs-12 col-sm-6 padding-cero">
+                        <div class="ih-item square effect13 left_to_right">
+                            <a href="contenidos/varios.html">
+                                <div class="img">
+                                    <img src="images/Imgs_WebDesign/EnLaNube_Imgs.png" alt="img">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 padding-cero">
+                        <div class="ih-item square effect13 left_to_right">
+                            <a href="contenidos/varios.html">
+                                <div class="img">
+                                    <img src="images/Imgs_WebDesign/EnLaNube_Imgs(1).png" alt="img">
+                                </div>
+                                <div class="info">
+                                    <h3>Diseño Web</h3>
+                                    <p>Diseñamos y desarrollamos tus páginas web con responsive design.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+         
             
             
-            
-
-            <div id="contenido" class="row">
-                
-                <div id="contenido" class="col-xs-12">Inicio: On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</div>
-                
+            <!--Nosotros-->
+            <div id="nosotros" class="row">
+                <div class="col-xs-12 blanco">
+                    <hr id="ancla"><hr id="ancla"><hr id="ancla">
+                    <div class="col-md-12 centro">
+                    <h1 class="">Equipo de Trabajo</h1>
+                    <hr>
+                    <p class="centro">Contamos con un grupo de ingenieros, desarrolladores y diseñadores dispuestos a prestarte siempre el mejor servicio.</p>    
+                    </div>
+                </div>
                 <hr>
-                <!--Slide-->
-                <div class="col-xs-12">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="images/slide/web1.png" alt="Chania">
-                                <div class="carousel-caption">
-                                    <h3>Diseño</h3>
-                                    <p>Diseñamos tus páginas web</p>
-                                </div>
+                <div class="nosotros">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3 col-md-offset-3 padding">
+                            <!-- normal -->
+                            <div class="ih-item circle effect19">
+                                <a href="#">
+                                    <div class="img"><img src="images/Equipo/Camilo.PNG" class="img-responsive" alt="img"></div>
+                                    <div class="info">
+                                        <h3>CTO</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="item">
-                                <img src="images/slide/web2.png" alt="Chania">
-                                <div class="carousel-caption">
-                                    <p>Desarrollo</p>
-                                </div>
+                            <!-- end normal -->
+                            <!--Redes Sociales-->
+                            <div class="centro">
+                                <h4 class="centro negrita">Camilo Torres</h4>
+                                <p class="centro">Desarrollador y gestor de contenidos digitales.</p>
+                                <ul class="social-net social-c">
+                                    <li><a href="https://github.com/skamilo11" class="icoGithub s" title="Github"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin s" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:skamilo9406@gmail.com" class="icoEmail s" title="Correo"><i class="fa fa-envelope-o"></i></a></li>
+                                </ul>	
+                            </div> 
+                        </div>
+                        <!--Otro integrante
+                        <div class="col-xs-6 col-md-4 padding">
+                            <!-- normal 
+                            <div class="ih-item circle effect19">
+                                <a href="#">
+                                    <div class="img"><img src="images/Equipo/Otro.jpg" alt="img"></div>
+                                    <div class="info">
+                                      <h3>Administrador</h3>
+                                      <p>Administrador y otras cosas.</p>
+                                    </div>
+                                </a>
                             </div>
-
-                            <div class="item">
-                                <img src="images/slide/web3.png" alt="Flower">
-                            </div>
-
-                            <div class="item">
-                                <img src="images/slide/web4.png" alt="Flower">
+                            <!-- end normal -->
+                            <!--Redes Sociales
+                            <div class="centro">
+                                <h4 class="centro negrita">Pancho Villa</h4>
+                                <ul class="social-net social-c">
+                                    <li><a href="https://github.com/skamilo11" class="icoGithub s" title="Github"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin s" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:skamilo9406@gmail.com" class="icoEmail s" title="Correo"><i class="fa fa-envelope-o"></i></a></li>
+                                </ul>	
                             </div>
                         </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        -->
+                        <div class="col-xs-12 col-md-3 padding">
+                            <!-- normal -->
+                            <div class="ih-item circle effect19">
+                                <a href="#">
+                                    <div class="img centro"><img src="images/Equipo/Pilar.PNG" class="img-responsive" alt="Responsive image"></div>
+                                    <div class="info">
+                                        <h3>CTO</h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end normal -->
+                            <!--Redes Sociales-->
+                            <div class="centro">
+                                <h4 class="centro negrita">Pilar García</h4>
+                                <p class="centro">Desarrolladora y gestora de contenidos digitales.</p>
+                                <ul class="social-net social-c">
+                                    <li><a href="https://github.com/dpilargarcia" class="icoGithub s" title="Github"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/pilargarcialugo" class="icoLinkedin s" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:pilargarcialugo@gmail.com" class="icoEmail s" title="Correo"><i class="fa fa-envelope-o"></i></a></li>
+                                </ul>	
+                            </div> 
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <br>
-            
-
-            <div id="contenido" class="row">
-                <div class="box2 col-xs-12 col-sm-6 col-md-4">
-                    <img src="images/Logo.png" class="img-circle img-responsive center-block">
-                    <p>¿Quiénes somos?</p>
-                </div>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+          
+               
                 
-                <div id="contenido" class="box2 col-xs-12 col-sm-6 col-md-4">
-                    <img src="images/Logo.png" class="img-circle img-responsive center-block">
-                    <p>Nuestros clientes</p>
-                </div>
-                
-                <div id="contenido" class="box2 col-xs-12 col-sm-12 col-md-4">
-                    <img src="images/Logo.png" class="img-circle img-responsive center-block">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <br>
-            
-            <div id="contenido" class="row">
-                <blockquote class="blockquote-reverse">
-                    <em>"Sólo podemos ver un poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho por hacer".</em>
-                    <footer>Alan Turing,<cite title="Fuente"> disponible en...</cite></footer>
-                </blockquote>
-            </div>    
-            
-            
-            <!--Línea de código-->
-            <div class="row"><p><code>Éste en un texto prueba en formato código</code></p></div>
-            
-            <!--Bloque de código-->
-            <div class="row"><pre><p>Éste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código pruebaÉste es un bloque de código prueba</p></pre></div>
-            
-            <!--Teclas-->
+            <!--Portafolio-->
+            <div id="portafolio" class="row"><div class="col-xs-12"><hr id="ancla"><hr id="ancla"></div>
+            <div class="portafolio">
             <div class="row">
-                <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br></p>
-                <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+                <div class="col-xs-12 padding">
+                    <div class="content">
+                        <div class="visible">
+                            <p>Hello</p>
+                            <ul>
+                                <li>World!</li>
+                                <li>You!</li>
+                                <li>Users!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 centro">
+                    <h1>Portafolio</h1>
+                    <hr>
+                    <p class="centro">Éstos son algunos de nuestros trabajos y servicios que te ofrecemos. ¡Echa un vistazo!</p> 
+                </div>
             </div>
-            
-            
-            <!--Limpiando los errores del responsive:-->
-            <div class="clearfix visible-sm-block"></div>
-            
             <div class="row">
+                <div class="col-xs-6 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/1.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/2.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/3.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/4.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/5.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/6.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/7.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/8.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Hola Aquí!!</h3>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 margin">
+                    <div class="ih-item square effect13 left_to_right">
+                        <a href="#"><div class="img"><img src="images/Imgs_WebDesign/9.png" alt="img"></div>
+                        <div class="info">
+                            <h3 class="title">Diseño Web</h3>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row centro">
+                 <button onclick="window.location.href = 'contenidos/varios.html'" class="lined thick">Ver más...</button>   
+            </div>
+            </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            
+        
+               
+            <!--Formulario de Contacto-->    
+            <div id="contactanos" class="row form">
+                <div class="col-xs-12 blanco"><hr id="ancla"><hr id="ancla"></div>
+                <div class="contactanos">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="centro">Contáctanos</h2>
+                            <hr id="separador">
+                            <p class="centro">Para nosotros es importante tú opinión. Envíanos tus sugerencias o inquietudes.</p>
+                        </div>
+                    </div>
+                    <div class="row form">  
+                        <div class="col-xs-12 col-md-6 padding contacto">
+                            <div id="datos">
+                                <p><b class="titulo2"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Teléfono:</b> 123.456.7890</p>
+                                <p><b class="titulo2"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Correo:</b> enlanubewebdesign@gmail.com</p>
+                                <p><b class="titulo2"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Dirección:</b> 3481 Melrose Place Beverly Hills, CA 90210</p>
+                                <hr id="separador">
+                                <p class="centro">¿Estás listo para empezar tu próximo proyecto con nosotros? ¡Llámanos o envíanos un correo y te responderemos tan pronto como sea posible!</p>
+                                <hr id="separador">
+                                <p class="centro"><b class="titulo2">Encuéntranos en las redes:</b></p>
+                                <div class="centro">
+                                    <ul class="social-net social-c">
+                                        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="contenedor-formulario">
+                                <div class="wrapper">
+                                <!--Formulario-->
+                                <form id="miForm" action="" class="formulario" name="formulario_registro" method="post">
+                                    <!--Se trabaja con POST para que los datos del formulario no se envíen a la URL de la página (el método GET envía los datos a la URL)-->
+                                    <div>
+                                        <div class="input-group">
+                                            <input type="text" id="nombre" name="nombre">
+                                            <label class="label" for="nombre">Nombre:</label>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="email" id="email" name="email">
+                                            <label class="label" for="email">Email:</label>
+                                        </div>
+                                        <div class="input-group">
+                                            <textarea type="textarea" id="mensaje" name="mensaje"></textarea>
+                                            <label class="label" for="mensaje">Mensaje:</label>
+                                        </div>
+                                        <!--
+                                        <div class="input-group checkbox">
+                                            <input type="checkbox" name="terminos" id="terminos" value="true">
+                                            <label for="terminos">Acepto los términos y condiciones</label>
+                                        </div>
+                                        -->
+                                        <div class="input-group">
+                                            <input type="submit" id="btn-submit" value="Enviar" onclick="">
+                                        </div>
+                                    </div>    
+                                </form>  
+                                </div>    
+                            </div>
+                        </div>
+                    </div>  
+                </div>  
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------------->
         </div>
-        <br>
-        <!--***********************************************************************************************************************-->
         
         
         
-        
-        <!--***********************************************************************************************************************-->
         <!--Pie de Página-->
-        <!--***********************************************************************************************************************-->
         <footer class="footer">
             <div class="container">
+                <div class="row info">
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#"><p class="centro">Quiénes somos</p></a>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#"><p class="centro">Nuestros clientes</p></a>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#portafolio"><p class="centro">Nuestro trabajo</p></a>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <a href="#contactanos"><p class="centro">Contáctanos</p></a>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <p>Quiénes somos</p>
+                    <div class="col-md-12"><hr id="ancla"></div>
+                </div>
+                <div class="row centro">
+                    <div class="col-md-12">
+                        <ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook social" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter social" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle social" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoInstagram social" title="Instagram"><i class="fa fa-instagram"></i></a></li>
                     </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>Nuestros clientes</p>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <p>Nuestro trabajo</p>
-                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-12"><hr id="ancla"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12"><p class="centro">Copyright © En la Nube 2017. All rights reserved</p></div>
                 </div>
             </div>
         </footer>
-        <br>
-        <!--***********************************************************************************************************************-->
+        <!--------------------------------------------------------------------------------------------------------------------------->
         
         
         
         
+        
+        
+        <!--Librerías de JQuery y otros JS-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/inicio_js.js"></script>
+        <script src="js/inicioformulario_js.js"></script>
+        <script src="js/inicionavresponsive_js.js"></script>
+        <script src="js/linkactivoscroll_js.js"></script>
         
     </body>
 

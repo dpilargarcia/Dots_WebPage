@@ -9,17 +9,17 @@ $(document).ready(function(){
 
 		if(scroll > 200){
 			if(!flag){
-				$("#logo").css({"margin-top": "-5px", "width": "50px","height":"50px"});
+				$("#logo").css({"margin-top": "0px", "width": "50px","height":"50px"});
+				$("header").css({"background-color": "#fff", "opacity": "1"});
 
-				$("header").css({"background-color": "#000000", "opacity": "0.8"});
-				flag = true;
+                flag = true;
 			}
 		}else{
 			if(flag){
 				$("#logo").css({"margin-top": "150px", "width": "250px","height":"250px"});
+				$("header").css({"background-color": "fff", "opacity": "0.7"});
 
-				$("header").css({"background-color": "transparent"});
-				flag = false;
+                flag = false;
 			}
 		}
     });
