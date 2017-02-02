@@ -1,0 +1,324 @@
+.padding1
+    padding-top: 50px
+    padding-left: 80px
+    padding-right: 80px
+
+//Estilo formulario 1
+.form1
+    z-index: 1000
+    input, textarea
+        border-radius: 0
+    .fondo
+        background-image: url(../images/backgrounds/bogota3.JPG)
+        background-attachment: contain
+        background-position: center
+        background-repeat: no-repeat
+        width: 100%
+        .datos
+            background-color: transparent
+            .texto
+                color: white
+                margin-top: 70px
+                //padding: 50px
+            .datos2
+                background-color: rgba(white, .9)
+                margin: 40px
+                padding: 20px
+                li
+                    list-style: none
+                    display: inline
+                    a
+                        color: $gray
+                        padding: 5px
+                        &:hover
+                            color: $naranja
+                span
+                    padding-right: 8px
+                .margin
+                    margin: 30px
+    input:focus
+        border: 1px solid $naranja
+        box-shadow: none
+    textarea
+        height: 90px !important
+        width: 100% !important
+        &:focus
+            border: 1px solid $naranja
+            box-shadow: none
+    button
+        background-color: transparent
+        color: $naranja
+        border: 1px solid $naranja
+        border-radius: 0
+        width: 150px
+        font-size: 15px
+        float: right
+        &:hover
+            color: white
+            background-color: $naranja
+
+
+//Estilo formulario 2
+.form2
+    z-index: 1000
+    margin-top: 50px
+    background-color: #eeac99
+    p
+        color: $gray
+    h1
+        font-family: 'Montez'
+        font-size: 45px
+        color: $gray
+    .texto
+        margin: 20px
+        text-align: center
+    .formulario
+        margin: 40px
+        margin-top: 60px
+        text-align: center
+        section
+            width: 95%
+            display: inline-block //centra el formulario
+            input
+                display: inline-block
+                width: 70%
+                margin-bottom: 10px
+                border-radius: 0
+                border: none
+                background-color: white
+                color: black
+                &:focus
+                    border: none
+                    box-shadow: none
+                    background-color: $gris
+            textarea
+                display: inline-block
+                width: 70% !important
+                height: 150px !important
+                margin-bottom: 0px
+                background-color: white
+                color: black
+                border: none
+                border-radius: 0
+                &:focus
+                    border: none
+                    box-shadow: none
+                    background-color: $gris
+            label
+                display: inline-block
+                width: 30%
+                color: #484f4f
+                font-weight: normal
+                text-align: left
+            .button 
+                background-color: transparent
+                color: #484f4f
+                border-radius: 0
+                border: 1px solid #484f4f
+                font-size: 15px
+                float: right
+                &:hover
+                    background-color: #484f4f
+                    color: white
+    .mapa
+        .map
+            padding-right: 10px
+            font-size: 25px
+        iframe
+            border: 1px solid #484f4f
+                
+    .centro
+        margin-top: 10px
+        li
+            list-style: none
+            display: inline
+        a
+            color: #484f4f
+            padding: 5px
+            font-size: 17px
+            &:hover
+                color: white  
+            
+
+
+//Estilo formulario 3
+.form3
+    z-index: 1000
+    .formulario
+        margin: 0px
+        margin-top: 60px
+        h1
+            font-family: 'Just Another Hand'
+            font-size: 35px
+            color: #484f4f
+        section
+            width: 75%
+            margin: auto
+            margin-top: 20px
+            label
+                font-family: 'Just Another Hand'
+                font-size: 20px
+                font-weight: normal
+                color: #c83349
+            textarea
+                height: 200px !important
+                width: 100% !important
+                border-radius: 15px
+                &:focus
+                    border: 1px solid #c83349
+                    box-shadow: none
+                    background-color: white
+            input
+                border-radius: 15px
+                &:focus
+                    border: 1px solid #c83349
+                    box-shadow: none
+                    background-color: white
+                    
+            .button
+                font-family: 'Just Another Hand'
+                font-size: 25px
+                padding-top: 0px
+                color: #c83349
+                border: 1px solid #c83349
+                background-color: white
+                width: 100px
+                float: right
+                &:hover
+                    background-color: #c83349
+                    color: white
+    .texto
+        margin: 0px
+        margin-top: 100px
+        p.centro
+            margin-bottom: 20px 
+            margin-top: 50px
+            font-family: 'Just Another Hand'
+            font-size: 25px
+            font-weight: normal
+        i.fa-mobile
+            padding-left: 22px
+            padding-right: 22px
+            font-size: 28px
+        i.fa-envelope-o
+            padding-left: 20px
+            padding-right: 20px
+            font-size: 18px
+        i.fa-map-marker
+            padding-left: 21px
+            padding-right: 21px
+            font-size: 25px  
+        li
+            list-style: none
+            display: inline
+        a
+            color: #484f4f
+            padding: 5px
+            font-size: 20px
+            &:hover
+                color: #c83349     
+
+            
+//Estilo formulario 4
+.form4
+    text-align: center
+    
+
+
+
+
+
+//Estilo formulario 5 - Ventana Modal
+//Posicionaminto para que el modal quede encima de todo el contenido d ela página
+.contenido
+    z-index: 1
+header, nav
+    z-index: 2
+.form5
+    z-index: 1
+    text-align: center
+    padding: 50px
+    h2
+        font-family: 'Montez'
+    button
+        background-color: white
+        border-radius: 15px
+        border: 1px solid #002d30
+        color: #002d30
+        font-family: 'Just Another Hand'
+        font-size: 25px !important
+        &:hover
+            background-color: #002d30
+            color: white
+    
+.modal
+    z-index: 1000
+    background-color: transparent
+    margin-top: 60px
+.modal-pen
+    z-index: 1000
+.modal-backdrop
+    z-index: 0
+    background-color: transparent
+
+    //Contenidos de la venta modal:    
+.modal-dialog, .modal-content
+    z-index: 1000
+    background-color: white
+    width: 650px
+    height: auto
+    .modal-header
+        text-align: center
+        background-color: #002d30
+        color: white
+        border: none
+        .close
+            span
+                color: rgba(white, 1)
+                font-size: 30px
+        h4
+            font-family: 'Just Another Hand'
+            font-size: 30px !important
+    .modal-body
+        form
+            width: 60%
+            margin: auto
+            label
+                color: #002d30
+            input
+                border-radius: 15px
+                &:focus
+                    border: 1px solid #002d30
+                    box-shadow: none
+                    background-color: white
+            .radio-inline
+                color: #002d30
+                input:hover
+                    border: 1px solid #002d30
+                    box-shadow: none
+                    background-color: white
+    .modal-footer
+        text-align: center
+        .sesion
+            background-color: white
+            border-radius: 15px
+            border: 1px solid #002d30
+            color: #002d30
+            &:hover
+                background-color: #002d30
+                color: white
+        
+                    
+                    
+            
+                
+                
+
+
+    
+                
+    
+
+
+
+

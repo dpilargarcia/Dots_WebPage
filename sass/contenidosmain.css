@@ -116,7 +116,8 @@ a.social {
   padding-bottom: 20px; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   .container .padding-cero img {
     width: 100%; }
 
@@ -213,7 +214,7 @@ header {
             header .menu2 nav ul li a:hover {
               color: #404040;
               text-decoration: none;
-              border-bottom: 2px solid #ff8533;
+              border-bottom: 1px solid #ff8533;
               padding-bottom: 10px; }
 
 .container {
@@ -425,7 +426,7 @@ header nav ul li a span {
 #tabla1 .mat2 {
   color: #FF4136; }
 #tabla1 .mat3 {
-  color: #ff531a; }
+  color: #ff751a; }
 #tabla1 .mat4 {
   color: #0074D9; }
 #tabla1 .mat5 {
@@ -450,5 +451,297 @@ header nav ul li a span {
 
 .borde {
   border: 2px solid #f2f2f2; }
+
+.padding1 {
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px; }
+
+.form1 {
+  z-index: 1000; }
+  .form1 input, .form1 textarea {
+    border-radius: 0; }
+  .form1 .fondo {
+    background-image: url(../images/backgrounds/bogota3.JPG);
+    background-attachment: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; }
+    .form1 .fondo .datos {
+      background-color: transparent; }
+      .form1 .fondo .datos .texto {
+        color: white;
+        margin-top: 70px; }
+      .form1 .fondo .datos .datos2 {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 40px;
+        padding: 20px; }
+        .form1 .fondo .datos .datos2 li {
+          list-style: none;
+          display: inline; }
+          .form1 .fondo .datos .datos2 li a {
+            color: #404040;
+            padding: 5px; }
+            .form1 .fondo .datos .datos2 li a:hover {
+              color: #ff751a; }
+        .form1 .fondo .datos .datos2 span {
+          padding-right: 8px; }
+        .form1 .fondo .datos .datos2 .margin {
+          margin: 30px; }
+  .form1 input:focus {
+    border: 1px solid #ff751a;
+    box-shadow: none; }
+  .form1 textarea {
+    height: 90px !important;
+    width: 100% !important; }
+    .form1 textarea:focus {
+      border: 1px solid #ff751a;
+      box-shadow: none; }
+  .form1 button {
+    background-color: transparent;
+    color: #ff751a;
+    border: 1px solid #ff751a;
+    border-radius: 0;
+    width: 150px;
+    font-size: 15px;
+    float: right; }
+    .form1 button:hover {
+      color: white;
+      background-color: #ff751a; }
+
+.form2 {
+  z-index: 1000;
+  margin-top: 50px;
+  background-color: #eeac99; }
+  .form2 p {
+    color: #404040; }
+  .form2 h1 {
+    font-family: "Montez";
+    font-size: 45px;
+    color: #404040; }
+  .form2 .texto {
+    margin: 20px;
+    text-align: center; }
+  .form2 .formulario {
+    margin: 40px;
+    margin-top: 60px;
+    text-align: center; }
+    .form2 .formulario section {
+      width: 95%;
+      display: inline-block; }
+      .form2 .formulario section input {
+        display: inline-block;
+        width: 70%;
+        margin-bottom: 10px;
+        border-radius: 0;
+        border: none;
+        background-color: white;
+        color: black; }
+        .form2 .formulario section input:focus {
+          border: none;
+          box-shadow: none;
+          background-color: #f2f2f2; }
+      .form2 .formulario section textarea {
+        display: inline-block;
+        width: 70% !important;
+        height: 150px !important;
+        margin-bottom: 0px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 0; }
+        .form2 .formulario section textarea:focus {
+          border: none;
+          box-shadow: none;
+          background-color: #f2f2f2; }
+      .form2 .formulario section label {
+        display: inline-block;
+        width: 30%;
+        color: #484f4f;
+        font-weight: normal;
+        text-align: left; }
+      .form2 .formulario section .button {
+        background-color: transparent;
+        color: #484f4f;
+        border-radius: 0;
+        border: 1px solid #484f4f;
+        font-size: 15px;
+        float: right; }
+        .form2 .formulario section .button:hover {
+          background-color: #484f4f;
+          color: white; }
+  .form2 .mapa .map {
+    padding-right: 10px;
+    font-size: 25px; }
+  .form2 .mapa iframe {
+    border: 1px solid #484f4f; }
+  .form2 .centro {
+    margin-top: 10px; }
+    .form2 .centro li {
+      list-style: none;
+      display: inline; }
+    .form2 .centro a {
+      color: #484f4f;
+      padding: 5px;
+      font-size: 17px; }
+      .form2 .centro a:hover {
+        color: white; }
+
+.form3 {
+  z-index: 1000; }
+  .form3 .formulario {
+    margin: 0px;
+    margin-top: 60px; }
+    .form3 .formulario h1 {
+      font-family: "Just Another Hand";
+      font-size: 35px;
+      color: #484f4f; }
+    .form3 .formulario section {
+      width: 75%;
+      margin: auto;
+      margin-top: 20px; }
+      .form3 .formulario section label {
+        font-family: "Just Another Hand";
+        font-size: 20px;
+        font-weight: normal;
+        color: #c83349; }
+      .form3 .formulario section textarea {
+        height: 200px !important;
+        width: 100% !important;
+        border-radius: 15px; }
+        .form3 .formulario section textarea:focus {
+          border: 1px solid #c83349;
+          box-shadow: none;
+          background-color: white; }
+      .form3 .formulario section input {
+        border-radius: 15px; }
+        .form3 .formulario section input:focus {
+          border: 1px solid #c83349;
+          box-shadow: none;
+          background-color: white; }
+      .form3 .formulario section .button {
+        font-family: "Just Another Hand";
+        font-size: 25px;
+        padding-top: 0px;
+        color: #c83349;
+        border: 1px solid #c83349;
+        background-color: white;
+        width: 100px;
+        float: right; }
+        .form3 .formulario section .button:hover {
+          background-color: #c83349;
+          color: white; }
+  .form3 .texto {
+    margin: 0px;
+    margin-top: 100px; }
+    .form3 .texto p.centro {
+      margin-bottom: 20px;
+      margin-top: 50px;
+      font-family: "Just Another Hand";
+      font-size: 25px;
+      font-weight: normal; }
+    .form3 .texto i.fa-mobile {
+      padding-left: 22px;
+      padding-right: 22px;
+      font-size: 28px; }
+    .form3 .texto i.fa-envelope-o {
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 18px; }
+    .form3 .texto i.fa-map-marker {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 25px; }
+    .form3 .texto li {
+      list-style: none;
+      display: inline; }
+    .form3 .texto a {
+      color: #484f4f;
+      padding: 5px;
+      font-size: 20px; }
+      .form3 .texto a:hover {
+        color: #c83349; }
+
+.form4 {
+  text-align: center; }
+
+.contenido {
+  z-index: 1; }
+
+header, nav {
+  z-index: 2; }
+
+.form5 {
+  z-index: 1;
+  text-align: center;
+  padding: 50px; }
+  .form5 h2 {
+    font-family: "Montez"; }
+  .form5 button {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #002d30;
+    color: #002d30;
+    font-family: "Just Another Hand";
+    font-size: 25px !important; }
+    .form5 button:hover {
+      background-color: #002d30;
+      color: white; }
+
+.modal {
+  z-index: 1000;
+  background-color: transparent;
+  margin-top: 60px; }
+
+.modal-pen {
+  z-index: 1000; }
+
+.modal-backdrop {
+  z-index: 0;
+  background-color: transparent; }
+
+.modal-dialog, .modal-content {
+  z-index: 1000;
+  background-color: white;
+  width: 650px;
+  height: auto; }
+  .modal-dialog .modal-header, .modal-content .modal-header {
+    text-align: center;
+    background-color: #002d30;
+    color: white;
+    border: none; }
+    .modal-dialog .modal-header .close span, .modal-content .modal-header .close span {
+      color: white;
+      font-size: 30px; }
+    .modal-dialog .modal-header h4, .modal-content .modal-header h4 {
+      font-family: "Just Another Hand";
+      font-size: 30px !important; }
+  .modal-dialog .modal-body form, .modal-content .modal-body form {
+    width: 60%;
+    margin: auto; }
+    .modal-dialog .modal-body form label, .modal-content .modal-body form label {
+      color: #002d30; }
+    .modal-dialog .modal-body form input, .modal-content .modal-body form input {
+      border-radius: 15px; }
+      .modal-dialog .modal-body form input:focus, .modal-content .modal-body form input:focus {
+        border: 1px solid #002d30;
+        box-shadow: none;
+        background-color: white; }
+    .modal-dialog .modal-body form .radio-inline, .modal-content .modal-body form .radio-inline {
+      color: #002d30; }
+      .modal-dialog .modal-body form .radio-inline input:hover, .modal-content .modal-body form .radio-inline input:hover {
+        border: 1px solid #002d30;
+        box-shadow: none;
+        background-color: white; }
+  .modal-dialog .modal-footer, .modal-content .modal-footer {
+    text-align: center; }
+    .modal-dialog .modal-footer .sesion, .modal-content .modal-footer .sesion {
+      background-color: white;
+      border-radius: 15px;
+      border: 1px solid #002d30;
+      color: #002d30; }
+      .modal-dialog .modal-footer .sesion:hover, .modal-content .modal-footer .sesion:hover {
+        background-color: #002d30;
+        color: white; }
 
 /*# sourceMappingURL=contenidosmain.css.map */
