@@ -19,21 +19,19 @@ header
         position: fixed
         .logo
             float: left
-            padding-left: 50px
-            padding-right: 50px
+            padding: 10px 50px 10px 80px           
             a
                 text-decoration: none
                 color: $gray
-                font-size: 40px
+                font-size: 30px
                 line-height: 50px
-                font-family: 'Montez'
+                font-family: 'Sacramento' !important
                 font-weight: bold
                 &:hover
-                    color: #ff8533
+                    color: $activo
         nav
             float: right
-            padding-left: 50px
-            padding-right: 50px
+            padding: 10px 50px 10px 50px 
             ul
                 list-style: none
                 display: table
@@ -49,10 +47,20 @@ header
                         &:hover
                             color: $gray
                             text-decoration: none
-                            border-bottom: 1px solid #ff8533
-                            padding-bottom: 10px
+                            border-bottom: 2px solid $activo
+                            padding-bottom: 5px
+                    i
+                        padding-left: 8px
+                li.ini
+                    display: none
+                li.submenu
+                    cursor: pointer
                         
-                    
+//Link Activo
+.active
+    color: $activo !important
+    text-decoration: none
+    
 
 .container
     position: relative
@@ -70,10 +78,12 @@ header nav ul li .children
     background-color: white
     width: 120%
     z-index: 1000
-
-header nav ul li .children li
-    display: block
-    z-index: 1000
+    li
+        display: block
+        z-index: 1000
+        a:hover
+            border: none
+            color: $activo
 
 header nav ul li a span
     position: relative
@@ -99,11 +109,12 @@ header nav ul li a span
         .bt-menu 
             display: block
             padding: 20px
-            color: #ff8533
+            color: $activo
             overflow: hidden
             font-size: 15px
             font-weight: bold
             text-decoration: none
+            cursor: pointer
         span 
             float: right
             font-size: 20px
@@ -115,6 +126,7 @@ header nav ul li a span
         margin: 0
         overflow: scroll
         z-index: 1000
+        padding-top: 0 !important
         ul
             list-style: none
             display: block 
@@ -126,7 +138,10 @@ header nav ul li a span
                     display: block 
                     &:hover
                         border: none !important
-                        color: #ff8533 !important
+                        color: $activo !important
+            li.ini
+                display: block
+
     
     /*SubMenú*/
     header nav ul li:hover .children 
@@ -136,6 +151,6 @@ header nav ul li a span
         position: relative
     header nav ul li .children li a 
         margin-left: 20px
-    header nav ul li a span 
+    header nav ul li a i 
         float: right
 	

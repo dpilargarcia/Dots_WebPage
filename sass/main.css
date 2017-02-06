@@ -4,19 +4,38 @@
   margin-bottom: 30px; }
 
 .contacto {
-  background-color: #f2f2f2; }
-
-#datos {
-  padding: 70px; }
-  #datos p {
-    padding: 0px; }
+  padding: 50px 10px 50px 10px; }
 
 .wrapper {
   width: 100%;
   max-width: 600px;
-  padding: 40px;
+  padding: 40px 10px 40px 10px;
   margin: auto;
   background-color: #FFFFFF; }
+
+.datos2, .datos3 {
+  padding-top: 40px;
+  margin: auto; }
+
+.datos1 table {
+  margin: auto; }
+  .datos1 table td {
+    padding: 2px 5px 2px 5px; }
+  .datos1 table i {
+    font-size: 15px; }
+  .datos1 table i.fa-map-marker {
+    font-size: 18px;
+    color: #00384d; }
+  .datos1 table i.fa-whatsapp {
+    font-size: 17px;
+    color: #128c7e; }
+  .datos1 table i.fa-envelope-o {
+    color: #e06377; }
+  .datos1 table .tel, .datos1 table .mail, .datos1 table .dir {
+    padding-left: 7px; }
+
+.datos3 b {
+  color: #404040; }
 
 .form h1 {
   padding: 10px; }
@@ -32,7 +51,7 @@
     margin: auto; }
     .contenedor-formulario .formulario .input-group {
       position: relative;
-      width: 80%;
+      width: 90%;
       margin-bottom: 30px;
       margin-left: auto;
       margin-right: auto; }
@@ -171,7 +190,8 @@
         color: #FFFFFF; }
 
 .margin {
-  padding: 0px; }
+  padding: 0px;
+  margin: 0; }
 
 .ih-item.square.effect13 .info .title {
   color: #fff;
@@ -181,22 +201,21 @@
 .footer {
   background-color: #f2f2f2;
   color: #404040;
-  font-size: 12px;
+  font-size: 13px;
   height: auto;
   display: flex;
   align-items: center;
-  padding: 35px;
+  padding: 25px;
   margin: 0; }
   .footer a {
     text-decoration: none;
-    color: #404040; }
+    color: #404040 !important; }
     .footer a:hover, .footer a:active, .footer a:focus {
       text-decoration: none;
-      color: #009999; }
-  .footer .info {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
+      color: #009999 !important; }
+  .footer .copyr {
+    padding-top: 30px;
+    color: #404040 !important; }
 
 /* footer social icons */
 ul.social-network {
@@ -209,25 +228,22 @@ ul.social-network {
     margin: 0 5px; }
 
 /* footer social icons */
-.social-network a.icoRss:hover {
-  background-color: #F56505; }
-.social-network a.icoFacebook:hover {
-  background-color: #3B5998; }
-.social-network a.icoTwitter:hover {
-  background-color: #33ccff; }
-.social-network a.icoGoogle:hover {
-  background-color: #BD3518; }
-.social-network a.icoVimeo:hover {
-  background-color: #0590B8; }
-.social-network a.icoLinkedin:hover {
-  background-color: #007BB6; }
-.social-network a.icoInstagram:hover {
-  background-color: #3F729B; }
-.social-network a.icoYelp:hover {
-  background-color: #CB2027; }
-
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i, .social-network a.icoYelp:hover i {
-  color: #fff; }
+.social-network a.icoRss:hover i {
+  color: #F56505; }
+.social-network a.icoFacebook:hover i {
+  color: #3B5998; }
+.social-network a.icoTwitter:hover i {
+  color: #33ccff; }
+.social-network a.icoGoogle:hover i {
+  color: #BD3518; }
+.social-network a.icoVimeo:hover i {
+  color: #0590B8; }
+.social-network a.icoLinkedin:hover i {
+  color: #007BB6; }
+.social-network a.icoInstagram:hover i {
+  color: #3F729B; }
+.social-network a.icoYelp:hover i {
+  color: #CB2027; }
 
 a.socialIcon:hover, .socialHoverClass {
   color: #44BCDD; }
@@ -258,7 +274,7 @@ a.socialIcon:hover, .socialHoverClass {
   -ms-transition: all 0.2s;
   transition: all 0.2s; }
 .social-circle i {
-  color: #fff;
+  color: #404040;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
@@ -266,7 +282,7 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.8s; }
 
 a.social {
-  background-color: #404040; }
+  background-color: transparent; }
 
 ul.social-net {
   list-style: non;
@@ -318,10 +334,9 @@ header {
   position: fixed;
   width: 100%;
   height: 60px;
-  background-color: #fff;
-  opacity: 0.7;
   -webkit-transition: background-color 0.5s;
-  z-index: 1000; }
+  z-index: 1000;
+  background-color: transparent; }
   header nav {
     display: table;
     margin: auto;
@@ -340,9 +355,11 @@ header {
         padding-top: 15px;
         position: relative;
         display: inline-block; }
+        header nav ul li i {
+          padding-left: 8px; }
 
 ul a {
-  color: #404040;
+  color: #fff;
   text-decoration: none;
   display: block; }
   ul a:hover {
@@ -356,7 +373,7 @@ ul a {
     text-decoration: none; }
 
 .active {
-  color: #009999;
+  color: #009999 !important;
   text-decoration: none; }
 
 /*Submen├║s */
@@ -369,18 +386,18 @@ header nav ul li #drop {
   z-index: 1000; }
 
 #drop {
-  background-color: white;
+  background-color: rgba(64, 64, 64, 0.7);
   border-radius: 0;
   border-color: transparent; }
   #drop li a {
-    color: #404040;
+    color: #fff;
     background-color: transparent; }
     #drop li a:hover {
-      color: #009999; }
+      color: #009999 !important; }
     #drop li a:active {
-      color: #009999; }
+      color: #009999 !important; }
     #drop li a:focus {
-      color: #009999;
+      color: #009999 !important;
       background-color: transparent; }
 
 /*Banner */
@@ -453,8 +470,7 @@ img#logo {
   header nav ul li #drop {
     width: 100%;
     position: relative;
-    background-color: white;
-    color: black; }
+    background-color: rgba(0, 0, 0, 0.5); }
 
   header nav ul li #drop li a {
     margin-left: 20px; } }
@@ -462,6 +478,7 @@ img#logo {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Arima Madurai"; }
 
 section a {
@@ -476,7 +493,7 @@ section#nosotros, section#servicios, section#contactanos, section#portafolio {
   margin-bottom: 20px; }
 
 b {
-  color: #00384d; }
+  color: #009999; }
 
 p {
   text-align: justify; }

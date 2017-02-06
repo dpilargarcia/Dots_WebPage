@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montez')
+
 .padding1
     padding-top: 50px
     padding-left: 80px
@@ -19,6 +21,8 @@
             .texto
                 color: white
                 margin-top: 70px
+                font-family: 'Arima Madurai'
+                font-size: 13px
                 //padding: 50px
             .datos2
                 background-color: rgba(white, .9)
@@ -56,6 +60,10 @@
         &:hover
             color: white
             background-color: $naranja
+    table
+        margin: auto
+        td
+            padding: 2px 5px 2px 5px
 
 
 //Estilo formulario 2
@@ -66,8 +74,8 @@
     p
         color: $gray
     h1
-        font-family: 'Montez'
-        font-size: 45px
+        font-family: 'Arima Madurai'
+        font-size: 30px
         color: $gray
     .texto
         margin: 20px
@@ -139,6 +147,7 @@
             &:hover
                 color: white  
             
+
 
 
 //Estilo formulario 3
@@ -217,14 +226,47 @@
             font-size: 20px
             &:hover
                 color: #c83349     
-
+    table
+        margin: auto
+        td
+            padding: 2px 5px 2px 5px
             
 //Estilo formulario 4
 .form4
     text-align: center
-    
-
-
+    background-image: url(../images/Imgs_WebDesign/9.PNG)
+    background-attachment: contain
+    background-position: center
+    background-repeat: no-repeat
+    margin-top: 60px
+    padding: 5%
+    color: white
+    .form-group
+        padding: 10px
+        input
+            border-radius: 0
+            background-color: rgba($white, 0.7)
+            width: 70%
+            margin: auto
+            &:hover, &:focus 
+                border-color: $gray
+                box-shadow: none
+    button
+        background-color: $activo
+        width: 70%
+        border-radius: 0
+        margin: 20px 0px 20px 0px
+        &:hover, &:focus
+            background-color: transparent
+            color: white
+            border: 1px solid $activo
+    .sincuenta
+        p
+            margin-top: 40px
+        .registro
+            background-color: transparent
+            color: white
+            margin-top: 0px
 
 
 
@@ -236,20 +278,21 @@ header, nav
     z-index: 2
 .form5
     z-index: 1
+    margin: 60px auto 20px auto
     text-align: center
-    padding: 50px
-    h2
-        font-family: 'Montez'
+    padding: 30px
     button
-        background-color: white
+        background-color: transparent
         border-radius: 15px
-        border: 1px solid #002d30
-        color: #002d30
-        font-family: 'Just Another Hand'
-        font-size: 25px !important
-        &:hover
-            background-color: #002d30
-            color: white
+        border: 1px solid white
+        color: white
+        font-family: 'Arima Madurai'
+        font-size: 15px !important
+        &:hover, &:focus, &:after
+            background-color: $activo
+            color: $white
+    h2
+        color: white    
     
 .modal
     z-index: 1000
@@ -261,53 +304,63 @@ header, nav
     z-index: 0
     background-color: transparent
 
-    //Contenidos de la venta modal:    
+//Contenidos de la venta modal: 
 .modal-dialog, .modal-content
     z-index: 1000
-    background-color: white
-    width: 650px
+    background-image: url(../images/Imgs_WebDesign/7.PNG)
+    background-attachment: contain
+    background-position: center
+    background-repeat: no-repeat
+    width: 350px
     height: auto
+    border-radius: 0
+    border: none
     .modal-header
         text-align: center
-        background-color: #002d30
         color: white
         border: none
         .close
             span
-                color: rgba(white, 1)
-                font-size: 30px
+                color: $white
+                opacity: 1
+                font-size: 20px
         h4
-            font-family: 'Just Another Hand'
-            font-size: 30px !important
+            font-family: 'Arima Madurai'
+            font-size: 18px !important
     .modal-body
         form
             width: 60%
             margin: auto
             label
-                color: #002d30
+                color: $white
+                font-family: 'Arima Madurai'
+                font-size: 15px !important
             input
-                border-radius: 15px
+                border-radius: 0
                 &:focus
-                    border: 1px solid #002d30
+                    border: 1px solid $activo
                     box-shadow: none
                     background-color: white
             .radio-inline
                 color: #002d30
                 input:hover
-                    border: 1px solid #002d30
+                    border: 1px solid #f7786b
                     box-shadow: none
                     background-color: white
-    .modal-footer
-        text-align: center
-        .sesion
-            background-color: white
-            border-radius: 15px
-            border: 1px solid #002d30
-            color: #002d30
-            &:hover
-                background-color: #002d30
+            button
+                background-color: rgba($activo, 0.5)
+                width: 100%
                 color: white
-        
+                border-radius: 0
+                font-family: 'Arima Madurai'
+                font-size: 14px !important
+                &:hover, &:focus, &:after
+                    background-color: transparent
+                    border: 1px solid $activo 
+    .modal-footer
+        background-color: $white
+        padding: 0
+        margin: 0
                     
                     
             

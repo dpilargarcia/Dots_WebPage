@@ -6,13 +6,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Amita|Laila|Arsenal|Pacifico|Reenie+Beanie|Pompieri|Montez|Ruslan+Display|Just+Another+Hand" rel="stylesheet"> 
-        <link rel="shortcut icon" href="../images/Logos/Faviconmin.png">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sacramento|Arima+Madurai" rel="stylesheet"> 
+        <link rel="shortcut icon" href="../images/Logos/ekiimin.png">
         <!--Social Buttons:-->
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../sass/contenidosmain.css">
+         <!--Efecto hover:-->
+        <link rel="stylesheet" href="../css/ihover.css">
         
         <title>Contenidos</title>
         
@@ -24,16 +26,17 @@
         <header>
             
             <div class="menu_bar">
-                <a href="#" class="bt-menu"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>Menú</a>
+                <a class="bt-menu"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>Menú</a>
             </div>
             
             <div class="menu2">
-                <div class="logo"><a href="../index.html">Cloud WD</a></div>
+                <div class="logo"><a href="../index.html">Ekii&lt;/&gt;ing</a></div>
                 <nav class="menu">
                     <ul>
+                        <li class="ini"><a href="../index.html">Inicio</a></li>
                         <li><a href="#slides">Sliders</a></li>
                         <li><a href="#tablas">Tablas</a></li>
-                        <li class="submenu"><a>Formularios<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                        <li class="submenu"><a>Formularios<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                             <ul class="children">
                                 <li><a href="#form1">¡Contáctanos!</a></li>
                                 <li><a href="#form2">Formulario de Contacto</a></li>
@@ -42,33 +45,72 @@
                             </ul>
                         </li>
                         <li><a href="#coding">Coding</a></li>
+                        <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Log-in <i class="fa fa-user-o" aria-hidden="true"></i>
+                            </a></li>
                     </ul>
                 </nav>
             </div>
             
         </header>
         
-        
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Log-in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                        </div>
+                        <p class="text-right"><a href="#">Forgot password?</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-dismiss="modal" class="btn">Close</a>
+                        <a href="#" class="btn btn-primary">Log-in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Contenido-->
         <div class="container contenido">
             
             <div id="contenido" class="row padding-cero">
                 <div class="col-xs-12 padding-cero">
-                    <img src="../images/backgrounds/Backgrounds_Banners3.jpg" class="img-responsive padding-cero" alt="Responsive image">
-                </div>
-                <div class="col-xs-12">
-                    <h3 class="centro">Estos son otros contenidos que tenemos para ofrecerte...</h3>
+                    <img src="../images/Imgs_WebDesign/computer14.jpg" class="img-responsive padding-cero" alt="Responsive image">
                 </div>
             </div> 
+            <div class="row">
+                <div id="contenido" class="main row">
+                    <div class="col-xs-12 imghover">
+                        <div class="ih-item square effect13 left_to_right">
+                            <a href="contenidos/varios.html">
+                                <div class="img">
+                                    <img src="../images/Imgs_WebDesign/banner22.png" alt="img">
+                                </div>
+                                <div class="info">
+                                    <h3>¡Agrégale lo que quieras a tu página web!</h3>
+                                    <p>Éstos son otros contenidos que tenemos para ofrecerte</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             
             <!--Slides-->
             <div id="slides" class="row slides">
                 <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
-                <h1 class="titulo2 centro">Sliders</h1>
                 <!--Slide 1-->
-                <div class="col-xs-12"><h3 class="centro titulo2">Slider Retro</h3></div>
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-5"><h3 class="centro backtitulo">Slider Retro</h3></div>
+                <div class="col-xs-12 col-sm-7">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -110,8 +152,7 @@
                 
                 <!--Slide 2-->
                 <div class="col-xs-12"><h1><hr></h1></div>
-                <div class="col-xs-12"><h3 class="centro titulo2">Slider Moderno</h3></div>
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-7">
                     <div class="flexslider">
                         <ul class="slides">
                             <li>
@@ -129,6 +170,7 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-5"><h3 class="centro backtitulo">Slider Moderno</h3></div>
             </div>
             
             
@@ -136,11 +178,9 @@
             <div id="tablas" class="row tablas">
                 <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
                 <div class="col-xs-12">
-                    <h1 class="centro titulo2">Tablas</h1>
-                    <hr>
-                    <h3 class="centro titulo2">Horario de Clases</h3>
+                    <h1 class="centro backtitulo">Horario de Clases</h2>
                 </div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                <div class="col-xs-12 col-sm-5 col-sm-offset-1">
                     <div class="table-responsive">
                         <table id="tabla1" class="table table-hover table-condensed centro">
                             <tr>
@@ -218,11 +258,7 @@
                         </table>    
                     </div>
                 </div>
-                <div class="col-xs-12">
-                    <hr>
-                    <h3 class="centro titulo2">Horario de Clases</h3>
-                </div>
-                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                <div class="col-xs-12 col-sm-5">
                     <div class="table-responsive">
                         <table id="tabla2" class="table table-bordered table-hover table-condensed centro">
                             <tr>
@@ -305,15 +341,11 @@
             <!--Formularios-->
             <div id="formularios" class="row formularios">
                 <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
-                <div class="col-xs-12">
-                    <h1 class="centro titulo2">Formularios</h1>
-                    <hr>
-                </div>
             </div>    
             
             <!--Form 1-->
             <div id="form1" class="row form1"> 
-                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
+                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"><hr id="separador"></div>
                 <div class="col-xs-12 fondo">
                     <div class="col-xs-12 col-sm-6 datos">
                         <div class="texto">
@@ -325,9 +357,20 @@
                     <div class="col-xs-12 col-sm-6 datos">
                         <div class="datos2">
                             <div class="margin">
-                                <p><b><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Teléfono:</b>&nbsp;&nbsp;&nbsp; 123.456.7890</p>
-                                <p><b><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Correo:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enlanubewebdesign@gmail.com</p>
-                                <p><b><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Dirección:</b>&nbsp; 3481 Melrose Place Beverly Hills, CA 90210</p>
+                                <table>
+                                    <tr>
+                                        <td valign="top"><b><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Teléfono:</b></td>
+                                        <td>123.456.7890</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><b><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Correo:</b></td>
+                                        <td>correo@correo.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><b><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Dirección:</b></td>
+                                        <td>3481 Melrose Place Beverly Hills, CA 90210</td>
+                                    </tr>
+                                </table>
                             </div>
                             <p class="centro">Escríbenos un correo y te responderemos tan pronto como sea posible.</p>
                             <p class="centro"><b>Encuéntranos en las redes:</b></p>
@@ -357,14 +400,8 @@
                                 <textarea class="form-control" placeholder="Escribe tu mensaje aquí"></textarea>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">    
-                            <div class="form-group">
-                                <label for="exampleInputFile" class="control-label">Subir un archivo</label>
-                                <input type="file" id="exampleInputFile">
-                                <p class="help-block">Máximo 60MB</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
+                        
+                        <div class="col-xs-12">
                             <div><button type="submit" class="btn">Enviar</button></div>
                         </div>
                     </form>
@@ -374,12 +411,11 @@
                 
             <!--Form 2-->
             <div id="form2" class="row form2">
-                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
+                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"><hr id="separador"></div>
                 <div class="col-xs-12">
                     <div class="">
                         <h1 class="centro">Formulario de Contacto</h1>
                         <p class="centro">Para nosotros es importante tu opininón. ¡Envíanos tus sugerencias!</p>
-                        
                         <div class="centro">
                             <ul class="social-net social-c">
                                 <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
@@ -450,11 +486,20 @@
                     <!--Mapa-->
                     <div class="texto">
                         <p class="centro">Para nosotros es importante tu opininón. ¡Envíanos tus sugerencias!</p>
-                        
-                        <p><i class="fa fa-mobile" aria-hidden="true"></i>123.456.7890</p>
-                        <p><i class="fa fa-envelope-o" aria-hidden="true"></i> enlanubewebdesign@gmail.com</p>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 3481 Melrose Place Beverly Hills, CA 90210</p>
-                        
+                        <table>
+                            <tr>
+                                <td valign="top"><i class="fa fa-mobile" aria-hidden="true"></i></td>
+                                <td>123.456.7890</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+                                <td>correo@correo.com</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                                <td>3481 Melrose Place Beverly Hills, CA 90210</td>
+                            </tr>
+                        </table>
                         <p class="centro">Síguenos en:</p>
                         <div class="centro">
                             <ul class="social-net social-c">
@@ -472,46 +517,39 @@
             
             <!--Formulario 4: Login-->
             <div id="form4" class="row form4">
-                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
+                <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"><hr id="separador"><hr id="separador"></div>
                 <div class="col-xs-12">
-                    <div class="col-xs-12">
-                        <h1>Iniciar sesión</h1>
-                    </div>
                     <div class="col-xs-12">
                         <form class="form-inline">
                             <div class="form-group col-xs-12">
                                 <label class="sr-only" for="exampleInputEmail3">Email</label>
                                 <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                            
-                            
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label class="sr-only" for="exampleInputPassword3">Contraseña</label>
                                 <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Contraseña">
                             </div>
-                            <div class="form-group col-xs-12">
-                                <label class="radio-inline"><input type="radio"> Recordarme </label>
-                            </div>
                             <div class="col-xs-12">
-                                <button type="submit" class="btn">Entrar</button>
+                                <button type="submit" class="btn">Iniciar Sesión</button>
                             </div>
                         </form>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 sincuenta">
                         <p>¿Aún no tienes una cuenta?</p>
-                        <button type="submit" class="btn">¡Regístrate!</button>
+                        <button type="submit" class="btn registro">¡Regístrate!</button>
+                    </div>
+                    
+                    <!--Formulario 5: Login. Con ventana modal-->
+                    <div id="form5" class="row form5">
+                        <!-- Button trigger modal -->
+                        <div class="col-xs-12">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#modal">Iniciar Sesión</button>
+                        </div> 
                     </div>
                 </div>
             </div>
             
-            <!--Formulario 5: Login. Con ventana modal-->
-            <div id="form5" class="row form5">
-                <!-- Button trigger modal -->
-                <div class="col-xs-12">
-                    <hr>
-                    <h2>Inicia Sesión</h2>
-                    <button type="button" class="btn" data-toggle="modal" data-target="#modal">Iniciar Sesión</button>
-                    <hr>
-                </div> 
-            </div>    
+            <!--Formulario 5: Login. Con ventana modal-->    
             <div class="row btnmodal">
                     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                         <div class="modal-dialog" role="document">
@@ -523,20 +561,24 @@
                                 <div class="modal-body">
                                     <form>
                                         <div class="form-group">
-                                            <label class="control-label" for="exampleInputEmail3">Correo</label>
+                                            <label for="exampleInputEmail3"><i class="fa fa-user-o" aria-hidden="true"></i></label>
                                             <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="exampleInputPassword3">Contraseña</label>
+                                            <label for="exampleInputPassword3"><i class="fa fa-lock" aria-hidden="true"></i></label>
                                             <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Contraseña">
                                         </div>
                                         <div class="form-group">
-                                            <label class="radio-inline"><input type="radio"> Recordarme </label>
+                                            <button type="button" class="btn sesion">Iniciar Sesión</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn sesion">Iniciar Sesión</button>
+                                    <ul class="social-network social-circle">
+                                        <li><a href="https://www.facebook.com/ekiidesarrolloweb#" target="_blank" class="icoFacebook social" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://plus.google.com/u/0/101197063302436160585" target="_blank" class="icoGoogle social" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.instagram.com/ekiidesarrolloweb/" target="_blank" class="icoInstagram social" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -549,36 +591,42 @@
             <!--Varios-->
             <div id="coding" class="row">
                 <div class="col-xs-12"><hr id="separador"><hr id="separador"><hr id="separador"></div>
-                <div class="col-xs-12">
-                    <h1 class="centro titulo2">Coding... &lt;/&gt;</h1>
-                    <h1 class="centro titulo2"></h1>
-                    <h4 class="centro">Líneas de código y más...</h4>
+                <div class="col-xs-12 fondocoding">
+                    <h1 class="centro">Coding... &lt;/&gt;</h1>
+                    <h5 class="centro">Líneas de código y algo más...</h5>
                 </div>
-                
-                <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2 centro padding">
-                    <!--Línea de código-->
-                    <p><code>Éste en un texto prueba en formato código</code></p>
-                </div>
-                <div class="col-xs-5 col-sm-4 padding">
+   
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
                     <!--Bloque de código-->
-                    <pre><p>Éste es un bloque de código prueba. Éste es un bloque de código prueba.
-                    Éste es un bloque de código prueba. Éste es un bloque de código prueba.</p></pre>
+                    <div class="coding">
+                    <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Hellow World!&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;p&gt;Welcome to On The Cloud&lt;/p&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;  
+                    </pre>
+                    </div>
                 </div>
                 <div class="col-xs-12"><hr></div>
-                <div class="col-xs-1 col-xs-offset-10 col-sm-4 col-sm-offset-4 centro borde padding">
-                    <!--Teclas-->
-                    <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br></p>
-                    <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+                <div class="col-xs-12 col-lg-4 col-lg-offset-4">
+                    <div class="teclas">    
+                        <!--Teclas-->
+                        <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br></p>
+                        <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+                    </div>
                 </div>
                 <div class="col-xs-12"><hr></div>
                 <div class="col-xs-12">
-                    <hr>
                     <!--Cita-->
                     <blockquote class="blockquote-reverse">
                         <em>"Sólo podemos ver un poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho por hacer".</em>
-                        <footer>Alan Turing,<cite title="Fuente"> disponible en...</cite></footer>
+                        <footer>Alan Turing.</footer>
                     </blockquote>
-                    <hr>
                 </div>
             </div>
             
@@ -591,39 +639,38 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12">
                         <a href="#"><p class="centro">Quiénes somos</p></a>
                     </div>
-                    <div class="col-xs-12 col-md-3">
+                    <div class="col-xs-12">
                         <a href="#"><p class="centro">Nuestros clientes</p></a>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <a href="#portafolio"><p class="centro">Nuestro trabajo</p></a>
+                    <div class="col-xs-12">
+                        <a href="../index.html#portafolio"><p class="centro">Nuestro trabajo</p></a>
                     </div>
-                    <div class="col-xs-12 col-md-3">
-                        <a href="#contactanos"><p class="centro">Contáctanos</p></a>
+                    <div class="col-xs-12">
+                        <a href="../index.html#contactanos"><p class="centro">Contáctanos</p></a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12"><hr id="ancla"></div>
                 </div>
                 <div class="row centro">
                     <div class="col-md-12">
                         <ul class="social-network social-circle">
-                        <li><a href="#" class="icoFacebook social" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter social" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle social" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoInstagram social" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/ekiidesarrolloweb#" target="_blank" class="icoFacebook social" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/101197063302436160585" target="_blank" class="icoGoogle social" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.instagram.com/ekiidesarrolloweb/" target="_blank" class="icoInstagram social" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                 <div class="row">
-                    <div class="col-md-12"><hr id="ancla"></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12"><p class="centro">Copyright &copy; En la Nube 2017. All rights reserved</p></div>
+                <div class="row copyr">
+                    <div class="col-xs-12"><p class="centro">Copyright &copy; Ekii 2017. All rights reserved</p></div>
                 </div>
             </div>
         </footer>
+        <!--------------------------------------------------------------------------------------------------------------------------->
+            
+            
+            
+            
         
         <!--Scripts:-->
         <script src="../js/jquery.js"></script>
@@ -634,7 +681,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> <!--Importante para el slide 2 !!! -->
         <script src="../js/slide2/jquery.flexslider.js"></script>
         <script src="../js/slide2/slide2_js.js"></script>
-        <!--Script de googlemaps:-->
+        <!--Script de link activo:-->
+        <script src="../js/linkactivoscroll_js.js"></script>    
         
             
     </body>

@@ -1,23 +1,24 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Montez");
 .footer {
   background-color: #f2f2f2;
   color: #404040;
-  font-size: 12px;
+  font-size: 13px;
   height: auto;
   display: flex;
   align-items: center;
-  padding: 35px;
+  padding: 25px;
   margin: 0; }
   .footer a {
     text-decoration: none;
-    color: #404040; }
+    color: #404040 !important; }
     .footer a:hover, .footer a:active, .footer a:focus {
       text-decoration: none;
-      color: #009999; }
-  .footer .info {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto; }
+      color: #009999 !important; }
+  .footer .copyr {
+    padding-top: 30px;
+    color: #404040 !important; }
 
 .footer {
   background-color: #FFFFFF;
@@ -40,25 +41,22 @@ ul.social-network {
     margin: 0 5px; }
 
 /* footer social icons */
-.social-network a.icoRss:hover {
-  background-color: #F56505; }
-.social-network a.icoFacebook:hover {
-  background-color: #3B5998; }
-.social-network a.icoTwitter:hover {
-  background-color: #33ccff; }
-.social-network a.icoGoogle:hover {
-  background-color: #BD3518; }
-.social-network a.icoVimeo:hover {
-  background-color: #0590B8; }
-.social-network a.icoLinkedin:hover {
-  background-color: #007BB6; }
-.social-network a.icoInstagram:hover {
-  background-color: #3F729B; }
-.social-network a.icoYelp:hover {
-  background-color: #CB2027; }
-
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i, .social-network a.icoYelp:hover i {
-  color: #fff; }
+.social-network a.icoRss:hover i {
+  color: #F56505; }
+.social-network a.icoFacebook:hover i {
+  color: #3B5998; }
+.social-network a.icoTwitter:hover i {
+  color: #33ccff; }
+.social-network a.icoGoogle:hover i {
+  color: #BD3518; }
+.social-network a.icoVimeo:hover i {
+  color: #0590B8; }
+.social-network a.icoLinkedin:hover i {
+  color: #007BB6; }
+.social-network a.icoInstagram:hover i {
+  color: #3F729B; }
+.social-network a.icoYelp:hover i {
+  color: #CB2027; }
 
 a.socialIcon:hover, .socialHoverClass {
   color: #44BCDD; }
@@ -89,7 +87,7 @@ a.socialIcon:hover, .socialHoverClass {
   -ms-transition: all 0.2s;
   transition: all 0.2s; }
 .social-circle i {
-  color: #fff;
+  color: #404040;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
@@ -97,12 +95,17 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.8s; }
 
 a.social {
-  background-color: #404040; }
+  background-color: transparent; }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Arsenal";
+  font-family: "Josefin Sans"; }
+
+blockquote {
+  margin: 80px 0px 50px auto;
+  width: 80%;
+  color: #404040;
   font-size: 15px; }
 
 #ancla {
@@ -152,13 +155,57 @@ a.social {
 .titulo2 {
   color: #404040;
   font-weight: bold;
-  font-family: "Montez"; }
+  font-family: "Arima Madurai";
+  font-size: 25px; }
 
 .background {
   background-color: #404040; }
 
 .separador {
   border-color: #111111; }
+
+.teclas {
+  background-color: #404040;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid rgba(64, 64, 64, 0.5);
+  border-radius: 15px;
+  width: 90%;
+  margin: auto; }
+  .teclas kbd {
+    background-color: white;
+    color: #404040; }
+
+.backtitulo {
+  padding: 2%;
+  color: #404040;
+  font-family: "Arima Madurai";
+  font-size: 20px; }
+
+.fondocoding {
+  background-image: url(../images/Imgs_WebDesign/banner3.PNG);
+  background-attachment: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  padding: 20px;
+  font-family: "Arima Madurai"; }
+
+.coding {
+  margin: auto;
+  width: 80%; }
+  .coding pre {
+    padding: 25px 15px 15px 0px;
+    margin: 0;
+    font-family: "Source Code Pro"; }
+
+.imghover {
+  height: 300px;
+  overflow: hidden;
+  padding-top: 50px;
+  margin: 0; }
 
 img#logo {
   width: 20px;
@@ -184,21 +231,19 @@ header {
     position: fixed; }
     header .menu2 .logo {
       float: left;
-      padding-left: 50px;
-      padding-right: 50px; }
+      padding: 10px 50px 10px 80px; }
       header .menu2 .logo a {
         text-decoration: none;
         color: #404040;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 50px;
-        font-family: "Montez";
+        font-family: "Sacramento" !important;
         font-weight: bold; }
         header .menu2 .logo a:hover {
-          color: #ff8533; }
+          color: #009999; }
     header .menu2 nav {
       float: right;
-      padding-left: 50px;
-      padding-right: 50px; }
+      padding: 10px 50px 10px 50px; }
       header .menu2 nav ul {
         list-style: none;
         display: table;
@@ -214,8 +259,18 @@ header {
             header .menu2 nav ul li a:hover {
               color: #404040;
               text-decoration: none;
-              border-bottom: 1px solid #ff8533;
-              padding-bottom: 10px; }
+              border-bottom: 2px solid #009999;
+              padding-bottom: 5px; }
+          header .menu2 nav ul li i {
+            padding-left: 8px; }
+        header .menu2 nav ul li.ini {
+          display: none; }
+        header .menu2 nav ul li.submenu {
+          cursor: pointer; }
+
+.active {
+  color: #009999 !important;
+  text-decoration: none; }
 
 .container {
   position: relative;
@@ -234,10 +289,12 @@ header nav ul li .children {
   background-color: white;
   width: 120%;
   z-index: 1000; }
-
-header nav ul li .children li {
-  display: block;
-  z-index: 1000; }
+  header nav ul li .children li {
+    display: block;
+    z-index: 1000; }
+    header nav ul li .children li a:hover {
+      border: none;
+      color: #009999; }
 
 header nav ul li a span {
   position: relative;
@@ -263,11 +320,12 @@ header nav ul li a span {
     .menu_bar .bt-menu {
       display: block;
       padding: 20px;
-      color: #ff8533;
+      color: #009999;
       overflow: hidden;
       font-size: 15px;
       font-weight: bold;
-      text-decoration: none; }
+      text-decoration: none;
+      cursor: pointer; }
     .menu_bar span {
       float: right;
       font-size: 20px; }
@@ -279,7 +337,8 @@ header nav ul li a span {
     right: 100%;
     margin: 0;
     overflow: scroll;
-    z-index: 1000; }
+    z-index: 1000;
+    padding-top: 0 !important; }
     header nav ul {
       list-style: none;
       display: block;
@@ -291,7 +350,9 @@ header nav ul li a span {
           display: block; }
           header nav ul li a:hover {
             border: none !important;
-            color: #ff8533 !important; }
+            color: #009999 !important; }
+      header nav ul li.ini {
+        display: block; }
 
   /*SubMen├║ */
   header nav ul li:hover .children {
@@ -304,7 +365,7 @@ header nav ul li a span {
   header nav ul li .children li a {
     margin-left: 20px; }
 
-  header nav ul li a span {
+  header nav ul li a i {
     float: right; } }
 .signature {
   position: relative;
@@ -471,7 +532,9 @@ header nav ul li a span {
       background-color: transparent; }
       .form1 .fondo .datos .texto {
         color: white;
-        margin-top: 70px; }
+        margin-top: 70px;
+        font-family: "Arima Madurai";
+        font-size: 13px; }
       .form1 .fondo .datos .datos2 {
         background-color: rgba(255, 255, 255, 0.9);
         margin: 40px;
@@ -508,6 +571,10 @@ header nav ul li a span {
     .form1 button:hover {
       color: white;
       background-color: #ff751a; }
+  .form1 table {
+    margin: auto; }
+    .form1 table td {
+      padding: 2px 5px 2px 5px; }
 
 .form2 {
   z-index: 1000;
@@ -516,8 +583,8 @@ header nav ul li a span {
   .form2 p {
     color: #404040; }
   .form2 h1 {
-    font-family: "Montez";
-    font-size: 45px;
+    font-family: "Arima Madurai";
+    font-size: 30px;
     color: #404040; }
   .form2 .texto {
     margin: 20px;
@@ -661,9 +728,45 @@ header nav ul li a span {
       font-size: 20px; }
       .form3 .texto a:hover {
         color: #c83349; }
+  .form3 table {
+    margin: auto; }
+    .form3 table td {
+      padding: 2px 5px 2px 5px; }
 
 .form4 {
-  text-align: center; }
+  text-align: center;
+  background-image: url(../images/Imgs_WebDesign/9.PNG);
+  background-attachment: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  padding: 5%;
+  color: white; }
+  .form4 .form-group {
+    padding: 10px; }
+    .form4 .form-group input {
+      border-radius: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 70%;
+      margin: auto; }
+      .form4 .form-group input:hover, .form4 .form-group input:focus {
+        border-color: #404040;
+        box-shadow: none; }
+  .form4 button {
+    background-color: #009999;
+    width: 70%;
+    border-radius: 0;
+    margin: 20px 0px 20px 0px; }
+    .form4 button:hover, .form4 button:focus {
+      background-color: transparent;
+      color: white;
+      border: 1px solid #009999; }
+  .form4 .sincuenta p {
+    margin-top: 40px; }
+  .form4 .sincuenta .registro {
+    background-color: transparent;
+    color: white;
+    margin-top: 0px; }
 
 .contenido {
   z-index: 1; }
@@ -673,20 +776,21 @@ header, nav {
 
 .form5 {
   z-index: 1;
+  margin: 60px auto 20px auto;
   text-align: center;
-  padding: 50px; }
-  .form5 h2 {
-    font-family: "Montez"; }
+  padding: 30px; }
   .form5 button {
-    background-color: white;
+    background-color: transparent;
     border-radius: 15px;
-    border: 1px solid #002d30;
-    color: #002d30;
-    font-family: "Just Another Hand";
-    font-size: 25px !important; }
-    .form5 button:hover {
-      background-color: #002d30;
-      color: white; }
+    border: 1px solid white;
+    color: white;
+    font-family: "Arima Madurai";
+    font-size: 15px !important; }
+    .form5 button:hover, .form5 button:focus, .form5 button:after {
+      background-color: #009999;
+      color: #FFFFFF; }
+  .form5 h2 {
+    color: white; }
 
 .modal {
   z-index: 1000;
@@ -702,46 +806,76 @@ header, nav {
 
 .modal-dialog, .modal-content {
   z-index: 1000;
-  background-color: white;
-  width: 650px;
-  height: auto; }
+  background-image: url(../images/Imgs_WebDesign/7.PNG);
+  background-attachment: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: auto;
+  border-radius: 0;
+  border: none; }
   .modal-dialog .modal-header, .modal-content .modal-header {
     text-align: center;
-    background-color: #002d30;
     color: white;
     border: none; }
     .modal-dialog .modal-header .close span, .modal-content .modal-header .close span {
-      color: white;
-      font-size: 30px; }
+      color: #FFFFFF;
+      opacity: 1;
+      font-size: 20px; }
     .modal-dialog .modal-header h4, .modal-content .modal-header h4 {
-      font-family: "Just Another Hand";
-      font-size: 30px !important; }
+      font-family: "Arima Madurai";
+      font-size: 18px !important; }
   .modal-dialog .modal-body form, .modal-content .modal-body form {
     width: 60%;
     margin: auto; }
     .modal-dialog .modal-body form label, .modal-content .modal-body form label {
-      color: #002d30; }
+      color: #FFFFFF;
+      font-family: "Arima Madurai";
+      font-size: 15px !important; }
     .modal-dialog .modal-body form input, .modal-content .modal-body form input {
-      border-radius: 15px; }
+      border-radius: 0; }
       .modal-dialog .modal-body form input:focus, .modal-content .modal-body form input:focus {
-        border: 1px solid #002d30;
+        border: 1px solid #009999;
         box-shadow: none;
         background-color: white; }
     .modal-dialog .modal-body form .radio-inline, .modal-content .modal-body form .radio-inline {
       color: #002d30; }
       .modal-dialog .modal-body form .radio-inline input:hover, .modal-content .modal-body form .radio-inline input:hover {
-        border: 1px solid #002d30;
+        border: 1px solid #f7786b;
         box-shadow: none;
         background-color: white; }
+    .modal-dialog .modal-body form button, .modal-content .modal-body form button {
+      background-color: rgba(0, 153, 153, 0.5);
+      width: 100%;
+      color: white;
+      border-radius: 0;
+      font-family: "Arima Madurai";
+      font-size: 14px !important; }
+      .modal-dialog .modal-body form button:hover, .modal-dialog .modal-body form button:focus, .modal-dialog .modal-body form button:after, .modal-content .modal-body form button:hover, .modal-content .modal-body form button:focus, .modal-content .modal-body form button:after {
+        background-color: transparent;
+        border: 1px solid #009999; }
   .modal-dialog .modal-footer, .modal-content .modal-footer {
-    text-align: center; }
-    .modal-dialog .modal-footer .sesion, .modal-content .modal-footer .sesion {
-      background-color: white;
-      border-radius: 15px;
-      border: 1px solid #002d30;
-      color: #002d30; }
-      .modal-dialog .modal-footer .sesion:hover, .modal-content .modal-footer .sesion:hover {
-        background-color: #002d30;
-        color: white; }
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0; }
+
+.footer {
+  background-color: #f2f2f2;
+  color: #404040;
+  font-size: 13px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  margin: 0; }
+  .footer a {
+    text-decoration: none;
+    color: #404040 !important; }
+    .footer a:hover, .footer a:active, .footer a:focus {
+      text-decoration: none;
+      color: #009999 !important; }
+  .footer .copyr {
+    padding-top: 30px;
+    color: #404040 !important; }
 
 /*# sourceMappingURL=contenidosmain.css.map */
