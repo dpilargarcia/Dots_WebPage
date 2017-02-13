@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefin+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco|Muli|Montez|Source+Code+Pro|Sacramento|Devonshire");
 #contactanos {
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -22,15 +23,11 @@
   .datos1 table td {
     padding: 2px 5px 2px 5px; }
   .datos1 table i {
-    font-size: 15px; }
+    color: #404040; }
   .datos1 table i.fa-map-marker {
-    font-size: 18px;
-    color: #00384d; }
+    font-size: 18px; }
   .datos1 table i.fa-whatsapp {
-    font-size: 17px;
-    color: #128c7e; }
-  .datos1 table i.fa-envelope-o {
-    color: #e06377; }
+    font-size: 17px; }
   .datos1 table .tel, .datos1 table .mail, .datos1 table .dir {
     padding-left: 7px; }
 
@@ -130,7 +127,7 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease; }
         .contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
-          color: #009999;
+          color: #01171f;
           width: 100%; }
         .contenedor-formulario .formulario .input-group.checkbox label:before, .contenedor-formulario .formulario .input-group.radio label:before {
           content: "";
@@ -180,23 +177,37 @@
       position: relative;
       margin-left: auto;
       margin-right: auto;
-      border: 1.7px solid #009999;
+      border: 1.7px solid #01171f;
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       .contenedor-formulario .formulario input[type="submit"]:hover {
-        background: #009999;
-        border: 1.7px solid #009999;
+        background: #01171f;
+        border: 1.7px solid #01171f;
         color: #FFFFFF; }
 
-.margin {
+.portafolio .margin {
   padding: 0px;
   margin: 0; }
-
-.ih-item.square.effect13 .info .title {
+.portafolio .ih-item.square.effect13 .info .title {
   color: #fff;
   text-align: center;
   font-size: 15px; }
+.portafolio .vermas {
+  padding: 20px;
+  text-align: center; }
+  .portafolio .vermas button {
+    width: 80%;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #01171f;
+    color: #01171f;
+    font-family: "Arima Madurai";
+    font-size: 15px !important; }
+    .portafolio .vermas button:hover, .portafolio .vermas button:focus, .portafolio .vermas button:after {
+      background-color: #01171f;
+      color: #FFFFFF; }
 
 .footer {
   background-color: #f2f2f2;
@@ -212,7 +223,7 @@
     color: #404040 !important; }
     .footer a:hover, .footer a:active, .footer a:focus {
       text-decoration: none;
-      color: #009999 !important; }
+      color: #01171f !important; }
   .footer .copyr {
     padding-top: 30px;
     color: #404040 !important; }
@@ -318,7 +329,7 @@ ul.social-net {
   -o-transition: all 0.2s;
   -ms-transition: all 0.2s;
   transition: all 0.2s;
-  color: #009999; }
+  color: #01171f; }
 .social-c i {
   color: #404040;
   -webkit-transition: all 0.8s;
@@ -361,19 +372,20 @@ header {
 ul a {
   color: #fff;
   text-decoration: none;
-  display: block; }
+  display: block;
+  margin-bottom: 17px; }
   ul a:hover {
-    color: #009999;
+    color: #d9d9d9 !important;
     text-decoration: none; }
   ul a:focus {
-    color: #009999;
+    color: #d9d9d9;
     text-decoration: none; }
   ul a:active {
-    color: #009999;
+    color: #d9d9d9;
     text-decoration: none; }
 
 .active {
-  color: #009999 !important;
+  color: #d9d9d9 !important;
   text-decoration: none; }
 
 /*Submen├║s */
@@ -386,18 +398,19 @@ header nav ul li #drop {
   z-index: 1000; }
 
 #drop {
-  background-color: rgba(64, 64, 64, 0.7);
+  background-color: #fff;
   border-radius: 0;
-  border-color: transparent; }
+  border-color: #fff;
+  width: 80%; }
   #drop li a {
-    color: #fff;
+    color: #000 !important;
     background-color: transparent; }
     #drop li a:hover {
-      color: #009999 !important; }
+      color: #01171f !important; }
     #drop li a:active {
-      color: #009999 !important; }
+      color: #01171f !important; }
     #drop li a:focus {
-      color: #009999 !important;
+      color: #01171f !important;
       background-color: transparent; }
 
 /*Banner */
@@ -470,10 +483,11 @@ img#logo {
   header nav ul li #drop {
     width: 100%;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: #fff !important; }
 
   header nav ul li #drop li a {
-    margin-left: 20px; } }
+    margin-left: 20px;
+    color: #000 !important; } }
 /*Fin Responsive */
 * {
   margin: 0;
@@ -492,8 +506,11 @@ section a:hover {
 section#nosotros, section#servicios, section#contactanos, section#portafolio {
   margin-bottom: 20px; }
 
-b {
-  color: #009999; }
+b.dotsT {
+  color: #01171f;
+  font-family: "Lobster Two";
+  padding: 0px 5px 0px 5px;
+  font-size: 140%; }
 
 p {
   text-align: justify; }
@@ -552,7 +569,7 @@ section#banner2 {
   text-shadow: 0.1em 0.1em 0.15em #333; }
 
 .titulo2 {
-  color: #009999; }
+  color: #01171f; }
 
 .efectoimg {
   height: 100px;
@@ -598,7 +615,7 @@ button {
   button:hover {
     box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3); }
   button.lined.thick {
-    border: solid 1px #009999; }
+    border: solid 1px #01171f; }
 
 .content {
   width: 207px;

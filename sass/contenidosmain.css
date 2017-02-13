@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-@import url("https://fonts.googleapis.com/css?family=Montez");
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Indie+Flower|Josefin+Sans|Just+Another+Hand|Lobster+Two|Open+Sans+Condensed|Source+Sans+Pro|Sue+Ellen+Francisco|Muli|Montez|Source+Code+Pro|Sacramento|Devonshire");
 .footer {
   background-color: #f2f2f2;
   color: #404040;
@@ -15,7 +14,7 @@
     color: #404040 !important; }
     .footer a:hover, .footer a:active, .footer a:focus {
       text-decoration: none;
-      color: #009999 !important; }
+      color: #01171f !important; }
   .footer .copyr {
     padding-top: 30px;
     color: #404040 !important; }
@@ -184,6 +183,7 @@ blockquote {
   font-size: 20px; }
 
 .fondocoding {
+  background-color: #000;
   background-image: url(../images/Imgs_WebDesign/banner3.PNG);
   background-attachment: contain;
   background-position: center;
@@ -234,13 +234,13 @@ header {
       padding: 10px 50px 10px 80px; }
       header .menu2 .logo a {
         text-decoration: none;
-        color: #404040;
+        color: #01171f;
         font-size: 30px;
         line-height: 50px;
-        font-family: "Sacramento" !important;
+        font-family: "Lobster Two" !important;
         font-weight: bold; }
         header .menu2 .logo a:hover {
-          color: #009999; }
+          color: #404040; }
     header .menu2 nav {
       float: right;
       padding: 10px 50px 10px 50px; }
@@ -259,7 +259,7 @@ header {
             header .menu2 nav ul li a:hover {
               color: #404040;
               text-decoration: none;
-              border-bottom: 2px solid #009999;
+              border-bottom: 2px solid #01171f;
               padding-bottom: 5px; }
           header .menu2 nav ul li i {
             padding-left: 8px; }
@@ -269,7 +269,7 @@ header {
           cursor: pointer; }
 
 .active {
-  color: #009999 !important;
+  color: #01171f !important;
   text-decoration: none; }
 
 .container {
@@ -294,7 +294,7 @@ header nav ul li .children {
     z-index: 1000; }
     header nav ul li .children li a:hover {
       border: none;
-      color: #009999; }
+      color: #01171f; }
 
 header nav ul li a span {
   position: relative;
@@ -320,7 +320,7 @@ header nav ul li a span {
     .menu_bar .bt-menu {
       display: block;
       padding: 20px;
-      color: #009999;
+      color: #01171f;
       overflow: hidden;
       font-size: 15px;
       font-weight: bold;
@@ -350,7 +350,7 @@ header nav ul li a span {
           display: block; }
           header nav ul li a:hover {
             border: none !important;
-            color: #009999 !important; }
+            color: #01171f !important; }
       header nav ul li.ini {
         display: block; }
 
@@ -477,11 +477,11 @@ header nav ul li a span {
   opacity: 1; }
 
 #tabla1 th {
-  color: #009999;
+  color: #01171f;
   text-align: center; }
 #tabla1 .izq {
   text-align: left !important;
-  color: #009999; }
+  color: #01171f; }
 #tabla1 .mat1 {
   color: #85144B; }
 #tabla1 .mat2 {
@@ -523,6 +523,7 @@ header nav ul li a span {
   .form1 input, .form1 textarea {
     border-radius: 0; }
   .form1 .fondo {
+    background-color: #000;
     background-image: url(../images/backgrounds/bogota3.JPG);
     background-attachment: contain;
     background-position: center;
@@ -735,6 +736,7 @@ header nav ul li a span {
 
 .form4 {
   text-align: center;
+  background-color: #000;
   background-image: url(../images/Imgs_WebDesign/9.PNG);
   background-attachment: contain;
   background-position: center;
@@ -753,14 +755,14 @@ header nav ul li a span {
         border-color: #404040;
         box-shadow: none; }
   .form4 button {
-    background-color: #009999;
+    background-color: #01171f;
     width: 70%;
     border-radius: 0;
     margin: 20px 0px 20px 0px; }
     .form4 button:hover, .form4 button:focus {
       background-color: transparent;
       color: white;
-      border: 1px solid #009999; }
+      border: 1px solid #FFFFFF; }
   .form4 .sincuenta p {
     margin-top: 40px; }
   .form4 .sincuenta .registro {
@@ -787,8 +789,8 @@ header, nav {
     font-family: "Arima Madurai";
     font-size: 15px !important; }
     .form5 button:hover, .form5 button:focus, .form5 button:after {
-      background-color: #009999;
-      color: #FFFFFF; }
+      background-color: #FFFFFF;
+      color: #01171f; }
   .form5 h2 {
     color: white; }
 
@@ -806,6 +808,7 @@ header, nav {
 
 .modal-dialog, .modal-content {
   z-index: 1000;
+  background-color: #000;
   background-image: url(../images/Imgs_WebDesign/7.PNG);
   background-attachment: contain;
   background-position: center;
@@ -835,7 +838,7 @@ header, nav {
     .modal-dialog .modal-body form input, .modal-content .modal-body form input {
       border-radius: 0; }
       .modal-dialog .modal-body form input:focus, .modal-content .modal-body form input:focus {
-        border: 1px solid #009999;
+        border: 1px solid #FFFFFF;
         box-shadow: none;
         background-color: white; }
     .modal-dialog .modal-body form .radio-inline, .modal-content .modal-body form .radio-inline {
@@ -845,7 +848,7 @@ header, nav {
         box-shadow: none;
         background-color: white; }
     .modal-dialog .modal-body form button, .modal-content .modal-body form button {
-      background-color: rgba(0, 153, 153, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
       width: 100%;
       color: white;
       border-radius: 0;
@@ -853,7 +856,7 @@ header, nav {
       font-size: 14px !important; }
       .modal-dialog .modal-body form button:hover, .modal-dialog .modal-body form button:focus, .modal-dialog .modal-body form button:after, .modal-content .modal-body form button:hover, .modal-content .modal-body form button:focus, .modal-content .modal-body form button:after {
         background-color: transparent;
-        border: 1px solid #009999; }
+        border: 1px solid #FFFFFF; }
   .modal-dialog .modal-footer, .modal-content .modal-footer {
     background-color: #FFFFFF;
     padding: 0;
@@ -873,7 +876,7 @@ header, nav {
     color: #404040 !important; }
     .footer a:hover, .footer a:active, .footer a:focus {
       text-decoration: none;
-      color: #009999 !important; }
+      color: #01171f !important; }
   .footer .copyr {
     padding-top: 30px;
     color: #404040 !important; }

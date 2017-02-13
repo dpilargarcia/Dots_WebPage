@@ -29,23 +29,25 @@ header
                     padding-left: 8px
                     
 ul 
+    
     a
         color: #fff
         text-decoration: none
         display: block
+        margin-bottom: 17px
         &:hover
-            color: $activo
+            color: $dot !important
             text-decoration: none
         &:focus
-            color: $activo
+            color: $dot
             text-decoration: none
         &:active
-            color: $activo
+            color: $dot
             text-decoration: none
 
 //Link Activo
 .active
-    color: $activo !important
+    color: $dot !important
     text-decoration: none
         
         
@@ -56,13 +58,14 @@ header nav ul li #drop
     display: none
     position: absolute
     z-index: 1000
-
+    
 #drop
-    background-color: rgba($gray, 0.7)
+    background-color: #fff
     border-radius: 0
-    border-color: transparent
+    border-color: #fff
+    width: 80%
     li a
-        color: #fff
+        color: #000 !important
         background-color: transparent
         &:hover 
             color: $activo !important
@@ -141,8 +144,9 @@ img#logo
     header nav ul li #drop 
         width: 100%
         position: relative
-        background-color: rgba(black, 0.5)
+        background-color: #fff !important
 	
     header nav ul li #drop li a 
         margin-left: 20px
+        color: #000 !important
 /*Fin Responsive*/
